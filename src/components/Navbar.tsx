@@ -247,7 +247,16 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-3 sm:py-4 px-3 sm:px-6 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href={lp('/')}>
-          <Image src="/logo.png" alt="The Surfer Logo" width={167} height={80} priority className="h-8 sm:h-10 md:h-12 w-auto transition-all duration-300" />
+          <Image
+            src="/logo.png"
+            alt="The Surfer Logo"
+            width={120}
+            height={58}
+            priority
+            sizes="(max-width: 768px) 70px, 100px"
+            quality={75}
+            className="h-8 sm:h-10 md:h-12 w-auto transition-all duration-300"
+          />
         </Link>
 
         {/* Center nav (desktop) */}

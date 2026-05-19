@@ -24,7 +24,8 @@ const ImageCard = ({ image, title, subtitle = '', link, index }: ImageCardProps)
         src={`/${image}`}
         alt={title}
         fill
-        sizes="(max-width: 1280px) 100vw, 1280px"
+        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 95vw, 1248px"
+        quality={70}
         className="object-cover transform transition-transform duration-700 group-hover:scale-110"
         priority={index === 0}
       />

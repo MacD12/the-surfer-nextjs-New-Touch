@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Award, Trophy, Star, ChevronDown } from 'lucide-react';
@@ -27,6 +28,28 @@ export default function HomeClient() {
   const cardSoulSurfer = cards?.[2];
   const cardMorocco = cards?.[3];
 
+  // Defer the 6.9 MB hero MP4 until the poster has painted and the browser is
+  // idle. This stops the video bytes from competing with the LCP image for
+  // bandwidth on slow connections.
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+  useEffect(() => {
+    const trigger = () => setLoadVideo(true);
+    const idle = (window as any).requestIdleCallback;
+    const handle = idle ? idle(trigger, { timeout: 2500 }) : window.setTimeout(trigger, 1500);
+    return () => {
+      if (idle && (window as any).cancelIdleCallback) (window as any).cancelIdleCallback(handle);
+      else window.clearTimeout(handle as number);
+    };
+  }, []);
+  useEffect(() => {
+    if (loadVideo && videoRef.current) {
+      videoRef.current.load();
+      // Best-effort autoplay; muted+playsinline lets this succeed on mobile.
+      videoRef.current.play().catch(() => {});
+    }
+  }, [loadVideo]);
+
   return (
     <div>
       {/* HERO with background video */}
@@ -44,19 +67,21 @@ export default function HomeClient() {
           priority
           fetchPriority="high"
           sizes="100vw"
+          quality={70}
           className="absolute inset-0 object-cover z-0"
         />
 
         <video
+          ref={videoRef}
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           autoPlay
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="none"
           poster="/surfcard1.jpg"
         >
-          <source src="/videos/Surf.mp4" type="video/mp4" />
+          {loadVideo && <source src="/videos/Surf.mp4" type="video/mp4" />}
         </video>
 
         {/* Gradient overlay — guarantees text contrast on the moving video */}

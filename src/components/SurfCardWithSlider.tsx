@@ -48,7 +48,9 @@ const SurfCardWithSlider = ({ images, topic, body1, body2, link, index }: SurfCa
                 src={image}
                 alt={`${topic} — photo ${idx + 1}`}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                quality={70}
+                loading={idx === 0 ? 'eager' : 'lazy'}
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 priority={idx === 0 && index === 0}
               />
