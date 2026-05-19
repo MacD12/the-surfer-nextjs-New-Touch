@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MapPin, Sparkles, BedDouble, ChevronDown } from 'lucide-react';
 import Navbar from '../Navbar';
@@ -12,21 +11,10 @@ const Header = () => {
   return (
     <div
       id="Header"
-      className="relative min-h-screen mb-4 flex items-center w-full overflow-hidden bg-gray-900"
+      className="relative min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden bg-gray-900"
+      style={{ backgroundImage: "url('/beach_camp/package_1.jpg')" }}
       aria-label={t('headerSoulSurfer.aria.section')}
     >
-      {/* Hero image — currently using /beach_camp/package_1.jpg until a dedicated
-          Soul Surfer hero is dropped at /public/soul_surfer/hero.jpg.
-          The dark `bg-gray-900` on the parent acts as a graceful fallback if the
-          file is missing; the gradient overlay below keeps the title legible. */}
-      <Image
-        src="/beach_camp/package_1.jpg"
-        alt={t('headerSoulSurfer.title')}
-        fill
-        sizes="100vw"
-        priority
-        className="absolute inset-0 object-cover"
-      />
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60 pointer-events-none"

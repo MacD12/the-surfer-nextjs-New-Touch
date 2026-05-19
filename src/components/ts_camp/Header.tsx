@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MapPin, Wallet, Waves, ChevronDown } from 'lucide-react';
 import Navbar from '../Navbar';
@@ -12,17 +11,10 @@ const Header = () => {
   return (
     <div
       id="Header"
-      className="relative min-h-screen mb-4 flex items-center w-full overflow-hidden"
+      className="relative min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
+      style={{ backgroundImage: "url('/ts2camp.jpg')" }}
       aria-label={t('headerTs2.aria.section')}
     >
-      <Image
-        src="/ts2camp.jpg"
-        alt={t('headerTs2.title')}
-        fill
-        sizes="100vw"
-        priority
-        className="object-cover -z-10"
-      />
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/25 to-black/60 pointer-events-none"

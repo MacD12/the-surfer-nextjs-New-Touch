@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Award, MapPin, Waves, ChevronDown } from 'lucide-react';
 import Navbar from '../Navbar';
@@ -16,17 +15,10 @@ const Header = () => {
   return (
     <div
       id="Header"
-      className="relative min-h-screen mb-4 flex items-center w-full overflow-hidden"
+      className="relative min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
+      style={{ backgroundImage: `url('${bgImage}')` }}
       aria-label={title}
     >
-      <Image
-        src={bgImage}
-        alt={title}
-        fill
-        sizes="100vw"
-        priority
-        className="object-cover -z-10"
-      />
       {/* Brand-standard gradient overlay for legibility */}
       <div
         aria-hidden="true"

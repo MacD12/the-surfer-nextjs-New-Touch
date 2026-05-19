@@ -1,6 +1,5 @@
 'use client';
 import React from 'react'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Navbar from '../Navbar'
 import { useTranslation } from '@/lib/i18n-compat';
@@ -10,18 +9,10 @@ const Header = () => {
 
   return (
     <div
-      className='relative min-h-screen mb-4 flex items-center w-full overflow-hidden bg-gray-900'
+      className='relative min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden bg-gray-900'
+      style={{ backgroundImage: "url('/morocco.jpg')" }}
       id='Header'
     >
-      <Image
-        src="/morocco.jpg"
-        alt=""
-        fill
-        priority
-        fetchPriority="high"
-        sizes="100vw"
-        className="object-cover object-center"
-      />
       <Navbar />
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/25 to-black/55 pointer-events-none" />
       <div className='container relative z-10 text-center mx-auto py-4 px-4 sm:px-6 md:px-20 lg:px-32 text-white'>

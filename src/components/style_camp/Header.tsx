@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MapPin, Mountain, Waves, ChevronDown } from 'lucide-react';
 import Navbar from '../Navbar';
@@ -9,17 +8,9 @@ const Header = () => {
   return (
     <div
       id="Header"
-      className="relative min-h-screen mb-4 flex items-center w-full overflow-hidden bg-gray-900"
+      className="relative min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden bg-gray-900"
+      style={{ backgroundImage: "url('/surf.jpg')" }}
     >
-      <Image
-        src="/surf.jpg"
-        alt=""
-        fill
-        priority
-        fetchPriority="high"
-        sizes="100vw"
-        className="object-cover object-center"
-      />
       <Navbar />
       <div
         aria-hidden="true"
