@@ -38,7 +38,7 @@ export function buildPageMetadata({
   slug,
   title,
   description,
-  image = '/banner.png',
+  image = '/logo.png',
   locale,
   type = 'website',
 }: PageSeoInput): Metadata {

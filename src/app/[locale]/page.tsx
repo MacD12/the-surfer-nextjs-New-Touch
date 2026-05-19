@@ -25,7 +25,7 @@ export async function generateMetadata({
     slug: '',
     title: titleByLocale[locale] || titleByLocale.en,
     description: descByLocale[locale] || descByLocale.en,
-    image: '/banner.png',
+    image: '/logo.png',
     locale,
   });
 }
