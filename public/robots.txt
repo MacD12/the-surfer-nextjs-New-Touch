@@ -1,0 +1,18 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /onlinecheckin/
+Disallow: /information
+Disallow: /payment-request
+Disallow: /payment-success
+
+# Host
+Host: https://www.thesurferweligama.com
+
+# Sitemaps
+Sitemap: https://www.thesurferweligama.com/sitemap.xml
