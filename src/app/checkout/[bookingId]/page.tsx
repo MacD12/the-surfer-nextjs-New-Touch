@@ -4,8 +4,12 @@
 'use client';
 import { use } from 'react';
 import dynamic from 'next/dynamic';
+import BookingStepSkeleton from '@/components/booking_engine/BookingStepSkeleton';
 
-const CheckoutClient = dynamic(() => import('./CheckoutClient'), { ssr: false });
+const CheckoutClient = dynamic(() => import('./CheckoutClient'), {
+  ssr: false,
+  loading: () => <BookingStepSkeleton />,
+});
 
 export default function Page({
   params,

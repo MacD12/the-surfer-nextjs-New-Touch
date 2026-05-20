@@ -2,8 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
 import { CheckCircle2 as FaCheckCircle, FileDown as FaFileDownload, Home as FaHome } from "lucide-react";
 import { API_BASE_URL } from '@/lib/api';
 
@@ -44,10 +42,17 @@ const PaymentSuccess = () => {
         }
     };
 
-    // 3. Screenshot and download as PDF
+    // 3. Screenshot and download as PDF.
+    //    jspdf + html2canvas combined are ~350 KiB gzipped, so we only pull
+    //    them in when the user actually triggers the receipt download.
     const downloadScreenshotPdf = async () => {
         const element = receiptRef.current;
         if (!element) return;
+
+        const [{ default: html2canvas }, { default: jsPDF }] = await Promise.all([
+            import("html2canvas"),
+            import("jspdf"),
+        ]);
 
         const canvas = await html2canvas(element, {
             scale: 2,

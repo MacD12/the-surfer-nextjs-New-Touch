@@ -3,8 +3,12 @@
 // so we lazy-load with ssr:false (which requires the wrapper to be 'use client').
 'use client';
 import dynamic from 'next/dynamic';
+import BookingStepSkeleton from '@/components/booking_engine/BookingStepSkeleton';
 
-const BookNowClient = dynamic(() => import('./BookNowClient'), { ssr: false });
+const BookNowClient = dynamic(() => import('./BookNowClient'), {
+  ssr: false,
+  loading: () => <BookingStepSkeleton />,
+});
 
 export default function Page() {
   return <BookNowClient />;

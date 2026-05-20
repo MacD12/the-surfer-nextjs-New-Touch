@@ -2,10 +2,11 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import axios from 'axios'
 import { Save, Download, Upload, Eraser, Calendar } from 'lucide-react'
-import jsPDF from 'jspdf'
-import html2canvas from 'html2canvas'
 import { API_BASE_URL } from '@/lib/api'
-import imageCompression from "browser-image-compression";
+
+// jspdf (~250 KiB gz), html2canvas (~50 KiB gz) and browser-image-compression
+// (~30 KiB gz) are loaded on demand inside the handlers below so the initial
+// check-in page bundle doesn't include them.
 
 const initialData = {
   checkinDate: '', checkoutDate: '', name: '', address: '', passportNumber: '', country: '', mobile: '',
@@ -103,6 +104,7 @@ export default function CheckinForm() {
     };
 
     try {
+      const { default: imageCompression } = await import("browser-image-compression");
       const compressedFile = await imageCompression(file, options);
       setPassportFile(compressedFile);
 
@@ -267,6 +269,11 @@ export default function CheckinForm() {
 
     setIsDownloading(true)
     try {
+      const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
+        import('jspdf'),
+        import('html2canvas'),
+      ])
+
       const esc = s => String(s ?? '').replace(/[&<>"']/g, m =>
         ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]))
 
