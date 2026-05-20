@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Award, Trophy, Star, ChevronDown } from 'lucide-react';
@@ -28,27 +28,19 @@ export default function HomeClient() {
   const cardSoulSurfer = cards?.[2];
   const cardMorocco = cards?.[3];
 
-  // Defer the 6.9 MB hero MP4 until the poster has painted and the browser is
-  // idle. This stops the video bytes from competing with the LCP image for
-  // bandwidth on slow connections.
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  // Defer the 6.9 MB hero MP4 until the LCP image has painted and the browser
+  // is idle. Until then, only the <Image> renders — so LCP fires on the
+  // optimized JPG and isn't dragged out by the video element layering on top.
   const [loadVideo, setLoadVideo] = useState(false);
   useEffect(() => {
     const trigger = () => setLoadVideo(true);
     const idle = (window as any).requestIdleCallback;
-    const handle = idle ? idle(trigger, { timeout: 2500 }) : window.setTimeout(trigger, 1500);
+    const handle = idle ? idle(trigger, { timeout: 2500 }) : window.setTimeout(trigger, 2000);
     return () => {
       if (idle && (window as any).cancelIdleCallback) (window as any).cancelIdleCallback(handle);
       else window.clearTimeout(handle as number);
     };
   }, []);
-  useEffect(() => {
-    if (loadVideo && videoRef.current) {
-      videoRef.current.load();
-      // Best-effort autoplay; muted+playsinline lets this succeed on mobile.
-      videoRef.current.play().catch(() => {});
-    }
-  }, [loadVideo]);
 
   return (
     <div>
@@ -56,10 +48,10 @@ export default function HomeClient() {
       <div className="relative min-h-screen w-full overflow-hidden bg-cover bg-center flex items-center mb-4">
         <Navbar />
 
-        {/* LCP image — Next/Image with priority so the hero shot lands fast;
-            the looping video then layers on top once its metadata + first
-            frame are ready. Net effect: LCP fires on the optimized poster
-            instead of the raw MP4 bytes. */}
+        {/* LCP image — Next/Image with priority so the hero shot lands fast.
+            The video below mounts ONLY after the page is idle so its 6.9MB
+            payload doesn't compete with the LCP image for bandwidth, and the
+            video element can't be selected as the LCP candidate. */}
         <Image
           src="/surfcard1.jpg"
           alt=""
@@ -71,18 +63,18 @@ export default function HomeClient() {
           className="absolute inset-0 object-cover z-0"
         />
 
-        <video
-          ref={videoRef}
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster="/surfcard1.jpg"
-        >
-          {loadVideo && <source src="/videos/Surf.mp4" type="video/mp4" />}
-        </video>
+        {loadVideo && (
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+          >
+            <source src="/videos/Surf.mp4" type="video/mp4" />
+          </video>
+        )}
 
         {/* Gradient overlay — guarantees text contrast on the moving video */}
         <div
