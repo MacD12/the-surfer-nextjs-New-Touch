@@ -261,25 +261,27 @@ const Navbar = () => {
 
         {/* Center nav (desktop) */}
         <ul className="hidden md:flex gap-4 lg:gap-7 text-sm lg:text-base relative">
-          <Link href={lp('/')} className={linkCls('/')}>{tx('navbar.home', 'HOME')}</Link>
+          <li><Link href={lp('/')} className={linkCls('/')}>{tx('navbar.home', 'HOME')}</Link></li>
 
           {/* DESTINATION (desktop click-to-open) */}
-          <button
-            ref={destBtnRef}
-            type="button"
-            onClick={() => setIsDestinationOpen((v) => !v)}
-            aria-haspopup="true"
-            aria-expanded={isDestinationOpen}
-            className={`cursor-pointer transition-all duration-300 hover:-translate-y-1 ${isScrolled ? 'text-gray-800 hover:text-cyan-600' : 'text-white hover:text-cyan-300'}`}
-          >
-            {tx('navbar.destination', 'DESTINATION')}
-          </button>
+          <li>
+            <button
+              ref={destBtnRef}
+              type="button"
+              onClick={() => setIsDestinationOpen((v) => !v)}
+              aria-haspopup="true"
+              aria-expanded={isDestinationOpen}
+              className={`cursor-pointer transition-all duration-300 hover:-translate-y-1 ${isScrolled ? 'text-gray-800 hover:text-cyan-600' : 'text-white hover:text-cyan-300'}`}
+            >
+              {tx('navbar.destination', 'DESTINATION')}
+            </button>
+          </li>
 
-          <Link href={lp('/activities')} className={linkCls('/activities')}>{tx('navbar.activities', 'ACTIVITIES')}</Link>
-          <Link href={lp('/rates')}      className={linkCls('/rates')}>     {tx('navbar.rates', 'RATES')}</Link>
-          <Link href={lp('/faq')}        className={linkCls('/faq')}>       {tx('navbar.faq', 'FAQ')}</Link>
-          <Link href={lp('/blogs')}      className={linkCls('/blogs')}>     {tx('navbar.blogs', 'BLOGS')}</Link>
-          <Link href={lp('/contact')}    className={linkCls('/contact')}>   {tx('navbar.contact', 'CONTACT')}</Link>
+          <li><Link href={lp('/activities')} className={linkCls('/activities')}>{tx('navbar.activities', 'ACTIVITIES')}</Link></li>
+          <li><Link href={lp('/rates')}      className={linkCls('/rates')}>     {tx('navbar.rates', 'RATES')}</Link></li>
+          <li><Link href={lp('/faq')}        className={linkCls('/faq')}>       {tx('navbar.faq', 'FAQ')}</Link></li>
+          <li><Link href={lp('/blogs')}      className={linkCls('/blogs')}>     {tx('navbar.blogs', 'BLOGS')}</Link></li>
+          <li><Link href={lp('/contact')}    className={linkCls('/contact')}>   {tx('navbar.contact', 'CONTACT')}</Link></li>
         </ul>
 
         {/* Right cluster */}
@@ -476,12 +478,14 @@ const Navbar = () => {
         <div className={`w-72 mx-auto rounded-3xl mt-0 transform transition-all duration-500 ease-in-out ${isScrolled ? 'bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl' : 'bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl'}`}>
           <div className="px-4 py-6 max-h-[75vh] overflow-y-auto">
             <ul className="flex flex-col gap-2 text-center">
-              <Link href={lp('/')} className={mobileLinkCls('/')} onClick={() => setIsMenuOpen(false)}>
-                {tx('navbar.home', 'HOME')}
-              </Link>
+              <li>
+                <Link href={lp('/')} className={mobileLinkCls('/')} onClick={() => setIsMenuOpen(false)}>
+                  {tx('navbar.home', 'HOME')}
+                </Link>
+              </li>
 
               {/* Destination (mobile accordion) */}
-              <div className="w-full">
+              <li className="w-full list-none">
                 <button
                   className={`group/dest w-full py-3 px-4 rounded-xl text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 ${isScrolled ? 'text-gray-800 hover:text-cyan-600 hover:bg-gray-100' : 'text-white hover:text-cyan-300 hover:bg-white/20'}`}
                   onClick={() => setIsMobileDestinationOpen((v) => !v)}
@@ -606,24 +610,24 @@ const Navbar = () => {
                     ))}
                   </div>
                 )}
-              </div>
+              </li>
 
               {/* Other mobile links */}
-              <Link href={lp('/activities')} className={mobileLinkCls('/activities')} onClick={() => setIsMenuOpen(false)}>{tx('navbar.activities', 'ACTIVITIES')}</Link>
-              <Link href={lp('/rates')}      className={mobileLinkCls('/rates')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.rates',      'RATES')}</Link>
-              <Link href={lp('/faq')}        className={mobileLinkCls('/faq')}        onClick={() => setIsMenuOpen(false)}>{tx('navbar.faq',        'FAQ')}</Link>
-              <Link href={lp('/blogs')}      className={mobileLinkCls('/blogs')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.blogs',      'BLOGS')}</Link>
-              <Link href={lp('/contact')}    className={mobileLinkCls('/contact')}    onClick={() => setIsMenuOpen(false)}>{tx('navbar.contact',    'CONTACT')}</Link>
+              <li><Link href={lp('/activities')} className={mobileLinkCls('/activities')} onClick={() => setIsMenuOpen(false)}>{tx('navbar.activities', 'ACTIVITIES')}</Link></li>
+              <li><Link href={lp('/rates')}      className={mobileLinkCls('/rates')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.rates',      'RATES')}</Link></li>
+              <li><Link href={lp('/faq')}        className={mobileLinkCls('/faq')}        onClick={() => setIsMenuOpen(false)}>{tx('navbar.faq',        'FAQ')}</Link></li>
+              <li><Link href={lp('/blogs')}      className={mobileLinkCls('/blogs')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.blogs',      'BLOGS')}</Link></li>
+              <li><Link href={lp('/contact')}    className={mobileLinkCls('/contact')}    onClick={() => setIsMenuOpen(false)}>{tx('navbar.contact',    'CONTACT')}</Link></li>
 
               {/* Translation (mobile) */}
-              <div className={`mt-3 pt-4 border-t ${isScrolled ? 'border-gray-200' : 'border-white/15'}`}>
+              <li className={`mt-3 pt-4 border-t list-none ${isScrolled ? 'border-gray-200' : 'border-white/15'}`}>
                 <LanguageSelect
                   value={locale}
                   onChange={(lng) => changeLanguage(lng)}
                   isScrolled={isScrolled}
                   variant="mobile"
                 />
-              </div>
+              </li>
             </ul>
           </div>
         </div>
