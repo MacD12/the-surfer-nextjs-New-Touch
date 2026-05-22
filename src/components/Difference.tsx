@@ -76,7 +76,12 @@ const Difference = () => {
     cta?: string;
   };
 
-  const intro = paragraphs[0] || '';
+  // The intro (paragraphs[0]) may hold a lead line + extra paragraphs,
+  // separated by blank lines. Split so each renders as its own <p>.
+  const introParts = (paragraphs[0] || '')
+    .split('\n')
+    .map((s) => s.trim())
+    .filter(Boolean);
   const beach = splitTitleAndBody(paragraphs[1] || '');
   const ts2 = splitTitleAndBody(paragraphs[2] || '');
   const soulSurfer = splitTitleAndBody(paragraphs[3] || '');
@@ -108,10 +113,21 @@ const Difference = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
         />
-        {intro && (
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-            {intro}
-          </p>
+        {introParts.length > 0 && (
+          <div className="space-y-3">
+            {introParts.map((part, i) => (
+              <p
+                key={i}
+                className={
+                  i === 0
+                    ? 'text-base md:text-lg font-semibold text-gray-800 leading-relaxed'
+                    : 'text-sm md:text-base text-gray-600 leading-relaxed'
+                }
+              >
+                {part}
+              </p>
+            ))}
+          </div>
         )}
       </motion.div>
 
