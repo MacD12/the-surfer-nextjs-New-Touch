@@ -11,14 +11,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'Surf Camp Morocco — Taghazout Surf Camp for Europeans',
-    de: 'Surfcamp Marokko — Surfen in Taghazout für Europäer',
+    en: 'Surf Camp Morocco — Taghazout / Tamraght · The Surfer 4.9★',
+    de: 'Surfcamp Marokko — Taghazout / Tamraght · The Surfer 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'Morocco surf camp — 4-hour direct flight from European cities, same timezone (UTC+1), Atlantic swell year-round. Anchor Point, Killer Point, Banana Beach. EU peak season Oct–Apr.',
+      'Top-rated surf camp Morocco in Tamraght — 4-hour direct flight from Europe, same timezone (UTC+1), Atlantic swell year-round. Anchor Point, Killer Point, Banana Beach. EU peak season Oct–Apr. 4.9★ 1600+ reviews.',
     de:
-      'Marokko Surfcamp — 4-Stunden-Direktflug aus europäischen Städten, gleiche Zeitzone (UTC+1), Atlantik-Swell ganzjährig. Anchor Point, Killer Point, Banana Beach. EU-Hauptsaison Okt–Apr.',
+      'Top-bewertetes Surfcamp Marokko in Tamraght — 4-Stunden-Direktflug aus Europa, gleiche Zeitzone (UTC+1), Atlantik-Swell ganzjährig. Anchor Point, Killer Point, Banana Beach. EU-Hauptsaison Okt–Apr. 4,9★ 1600+ Bewertungen.',
   };
   return buildPageMetadata({
     slug: '/morocco',

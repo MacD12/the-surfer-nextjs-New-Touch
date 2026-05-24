@@ -15,12 +15,12 @@ export async function generateMetadata({
     slug: '/blogs',
     title:
       locale === 'de'
-        ? 'Surf-Blog — Tipps, Guides & Geschichten'
-        : 'Surf Blog — Tips, Guides & Stories from Sri Lanka',
+        ? 'Surf Blog Sri Lanka & Marokko — Tipps & Guides · The Surfer'
+        : 'Surf Blog Sri Lanka & Morocco — Tips, Guides & Stories · The Surfer',
     description:
       locale === 'de'
-        ? 'Surf-Guides, Reisetipps und Geschichten aus der The Surfer Community. Surfen lernen in Sri Lanka und Marokko von unseren ISA-zertifizierten Surflehrern.'
-        : 'Surf guides, travel tips, and stories from The Surfer community. Learn surfing in Sri Lanka and Morocco from our ISA-certified instructors.',
+        ? 'Surfcamp Sri Lanka & Marokko Blog — beste Reisezeit, Surf-Guides für Weligama & Tamraght, Anfänger-Tipps, Reisegeschichten. Von ISA-zertifizierten Surflehrern. The Surfer.'
+        : 'Surf camp Sri Lanka & Morocco blog — best time to surf, Weligama & Tamraght guides, beginner tips, travel stories. Written by ISA-certified instructors. The Surfer.',
     image: '/blog.jpg',
     locale,
   });

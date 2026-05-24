@@ -346,6 +346,22 @@ export function destinationSchema(opts: {
 }
 
 /**
+ * FAQPage schema for a list of question/answer pairs. Use on any page that
+ * visually displays an FAQ — schema must match the visible content per Google.
+ */
+export function faqSchema(items: { question: string; answer: string }[]): StructuredData {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  };
+}
+
+/**
  * Article / BlogPosting schema for individual blog posts.
  * Enriched with publisher, dates, language, and word count where derivable.
  */

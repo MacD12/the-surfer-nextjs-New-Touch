@@ -1,8 +1,10 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import JsonLd, { type StructuredData } from '@/components/seo/JsonLd';
-import { CAMPS_DATA, campSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { CAMPS_DATA, campSchema, breadcrumbSchema, faqSchema } from '@/lib/structured-data';
 import TsCampClient from './TsCampClient';
+
+type FaqItem = { question: string; answer: string };
 
 export async function generateMetadata({
   params,
@@ -11,14 +13,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'TS2 Surf Camp Weligama — Budget Surf Stay Sri Lanka',
-    de: 'TS2 Surfcamp Weligama — Günstig Surfen in Sri Lanka',
+    en: 'TS2 Surf Camp Weligama — Budget Surf Camp Sri Lanka · 4.9★',
+    de: 'TS2 Surfcamp Weligama — Günstiges Surfcamp Sri Lanka · 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'Sleep cheap, surf with us. TS2 Camp in Weligama — private AC rooms, 5-min shuttle to Beach Camp where all surf, yoga and dinners happen. Ideal European budget option. 4.9 ⭐ 1600+ reviews.',
+      'Budget surf camp Sri Lanka — TS2 in Weligama. Private AC rooms with ensuite, 5-min shuttle to Beach Camp where all surf lessons, yoga and dinners happen. Best-value European surf trip. 4.9★ 1600+ reviews.',
     de:
-      'Günstig schlafen, mit uns surfen. TS2 Camp in Weligama — private Klimazimmer, 5 Min Shuttle zum Beach Camp, wo alle Surf-, Yoga- und Dinner-Sessions stattfinden. Perfekt für Europäer mit Budget. 4,9 ⭐ 1600+ Bewertungen.',
+      'Günstiges Surfcamp Sri Lanka — TS2 in Weligama. Privatzimmer mit Klimaanlage und eigenem Bad, 5 Min Shuttle zum Beach Camp für alle Surfkurse, Yoga und Dinner. Beste Preis-Leistung für Europäer. 4,9★ 1600+ Bewertungen.',
   };
   return buildPageMetadata({
     slug: '/ts2-camp',
@@ -38,12 +40,17 @@ export default async function TsCampPage({
   setRequestLocale(locale);
 
   const camp = CAMPS_DATA.find((c) => c.id === 'ts2')!;
+  const messages = (await getMessages()) as Record<string, unknown>;
+  const faqItems =
+    ((messages.campFaq as { ts2?: { items?: FaqItem[] } } | undefined)?.ts2?.items) || [];
+
   const schemas: StructuredData[] = [
     campSchema(camp, locale),
     breadcrumbSchema(locale, [
       { name: 'Sri Lanka', slug: '/srilanka' },
       { name: camp.name, slug: camp.slug },
     ]),
+    ...(faqItems.length ? [faqSchema(faqItems)] : []),
   ];
 
   return (

@@ -314,7 +314,7 @@
     "cards": [
       {
         "images": ["/beach_camp/11.jpg", "/beach_camp/I3.jpg", "/beach_camp/image_1.jpg", "/beach_camp/act1.jpg"],
-        "topic": "The Surfer Beach Surf Camp",
+        "topic": "The Surfer Beach Camp",
         "body1": "Komm zu uns – dem ultimativen Ziel für Surf-Enthusiasten. Erlebe den Nervenkitzel der Wellen und die ruhige Schönheit des Ozeans.",
         "link": "/beach-camp"
       },
@@ -400,8 +400,8 @@
   },
   "headers": {
     "beach": {
-      "title": "The Surfer Beach Camp",
-      "subtitle": "Dein ultimatives Surf-Camp am Strand",
+      "title": "The Surfer Beach Camp Weligama",
+      "subtitle": "Surfcamp Sri Lanka direkt am Strand — dein ultimatives Surf-Camp am Strand",
       "bgImage": "/beachcamp.jpg"
     }
   },
@@ -750,7 +750,7 @@
   "camps": {
     "cards": {
       "beach": {
-        "topic": "The Surfer Beach Surf Camp",
+        "topic": "The Surfer Beach Camp",
         "body": "Komm zu uns an das ultimative Ziel für Surfbegeisterte. Erlebe den Nervenkitzel des Wellenreitens und genieße die ruhige Schönheit des Ozeans."
       },
       "ts2": {
@@ -996,6 +996,37 @@
       "cta": "Zu Paketen und Preisen"
     }
   },
+  "campFaq": {
+    "heading": "Häufig gestellte Fragen",
+    "eyebrow": "Gut zu wissen",
+    "beach": {
+      "items": [
+        { "question": "Ist das The Surfer Beach Camp Weligama für Anfänger geeignet?", "answer": "Ja — Weligama Bay ist einer der besten Anfänger-Surfspots in Sri Lanka. Das Beach Camp liegt direkt an der Bucht mit sandigem Untergrund, langsam rollendem Whitewater und keinen Riffen oder Strömungen. ISA-zertifizierte Surflehrer geben tägliche Lektionen, Softtop-Boards in jedem Surf-Paket inklusive." },
+        { "question": "Was ist im Beach Camp Surf-Paket enthalten?", "answer": "Jedes Paket umfasst Unterkunft, tägliches Frühstück, zwei Surfstunden pro Tag (Mo–Sa), Board- und Rashguard-Verleih, Video-Analyse-Sessions sowie Zugang zum Pool und Yoga-Bereich. Halbpension (mit Abendessen) und Vollpension optional verfügbar — siehe /rates für aktuelle Preise." },
+        { "question": "Wann ist die beste Reisezeit im Beach Camp Weligama?", "answer": "Die Saison an der Südwestküste läuft von November bis April, mit den konstantesten Wellen Dezember bis März. Außerhalb dieser Zeit ist die Bucht für Anfänger meist noch surfbar, aber unsere Haupt-Buchungssaison sind die Wintermonate. Wassertemperatur bleibt ganzjährig bei 27–28 °C — kein Neoprenanzug nötig." },
+        { "question": "Wie weit ist das Beach Camp vom Flughafen entfernt?", "answer": "Etwa 2,5 Stunden mit dem Auto vom Colombo Bandaranaike International Airport (CMB). Privattransfers organisieren wir auf Anfrage — am einfachsten direkt bei der Buchung dazubuchen. Öffentliche Bus- und Zugverbindungen brauchen 4–5 Stunden." },
+        { "question": "Muss ich schwimmen können?", "answer": "Ja. Alle Gäste müssen sicher im offenen Wasser schwimmen können. Gesurft wird in hüft- bis brusttiefem Wasser nahe am Strand, aber du musst dich sicher genug fühlen, falls du vom Board fällst." }
+      ]
+    },
+    "ts2": {
+      "items": [
+        { "question": "Was ist der Unterschied zwischen TS2 Camp und Beach Camp?", "answer": "TS2 ist unsere Budget-Option — gleicher Standort in Weligama, schlichtere Privatzimmer mit AC und eigenem Bad, aber 5 Minuten Shuttle vom Beach Camp entfernt. Alle Surfstunden, Yoga, Frühstück, Abendessen und Events finden AM Beach Camp statt. Du schläfst günstiger im TS2, aber surfst und feierst im Beach Camp mit allen anderen." },
+        { "question": "Ist der Shuttle zwischen TS2 und Beach Camp inklusive?", "answer": "Wir erstatten 1.000 LKR pro Zimmer oder Schlafsaal-Bett pro Tag für Transport — deckt Tuk-Tuks oder Scooter-Taxis hin und zurück. Die 5-Minuten-Fahrt ist kurz und einfach, du kannst auch in ~20 Minuten zu Fuß gehen." },
+        { "question": "Bekommen TS2-Gäste dieselben Surfkurse wie Beach-Camp-Gäste?", "answer": "Ja — identisch. Gleiche ISA-zertifizierte Lehrer, gleicher Strand, gleiche Boards, gleiche Gruppengrößen. Einziger Unterschied: wo du nachts schläfst." },
+        { "question": "Werden Mahlzeiten im TS2 Camp serviert?", "answer": "Alle Mahlzeiten (Frühstück, optionales Abendessen) werden im Beach Camp serviert, wo Küche und Restaurant sind. TS2 ist reine Unterkunft. So halten wir den TS2-Preis günstig, ohne beim Essen Abstriche zu machen." },
+        { "question": "Für wen ist TS2 Camp am besten geeignet?", "answer": "Alleinreisende Europäer und Paare mit knapperem Budget, die trotzdem das volle Surfcamp-Erlebnis wollen — gleiche Lektionen, gleiche Crew, gleiche Aktivitäten — aber weniger fürs Bett zahlen. Wenn du hauptsächlich zum Schlafen und Duschen ins Zimmer kommst, ist TS2 das beste Preis-Leistungs-Verhältnis für eine Surfreise in Sri Lanka." }
+      ]
+    },
+    "soul": {
+      "items": [
+        { "question": "Wie unterscheidet sich Soul Surfer Camp von Beach Camp und TS2?", "answer": "Soul Surfer ist ein unabhängiges Retreat. Anderer Standort in Weligama, eigener privater Surf-Plan, Rooftop-Infinity-Pool mit Meerblick, Rooftop-Restaurant, Rooftop-Yoga. Läuft komplett im eigenen Rhythmus — getrennt vom Beach Camp / TS2-Alltag. Für engagierte Surfer, die Fokus und Fortschritt wollen." },
+        { "question": "Für wen ist Soul Surfer Camp am besten?", "answer": "Fortgeschrittene und ambitionierte europäische Surfer, die viel Wasserzeit ohne die belebtere Social-Szene des Beach Camps wollen. Auch gute Wahl für alle, die einen ruhigeren, designorientierten Aufenthalt mit Sea-View-Yoga und kleinerer Gruppen-Atmosphäre suchen." },
+        { "question": "Ist der Rooftop-Infinity-Pool für alle Gäste zugänglich?", "answer": "Ja — jeder Soul-Surfer-Gast hat als Teil des Aufenthalts vollen Zugang zum Rooftop-Infinity-Pool, Rooftop-Restaurant und Rooftop-Yoga-Bereich. Das gesamte Rooftop macht Soul Surfer eher zu einem Retreat als zu einem Camp." },
+        { "question": "Können Soul-Surfer-Gäste an Beach-Camp-Aktivitäten teilnehmen?", "answer": "Standardmäßig nicht — Soul Surfer läuft komplett unabhängig mit eigenem Surf-, Yoga- und Essensplan. Wenn du an einem Beach-Camp-Event teilnehmen willst (z. B. Bootsparty oder Poolparty), können wir das pro Event arrangieren. Die meisten Soul-Surfer-Gäste bevorzugen die ruhigere, fokussierte Atmosphäre des Retreats." },
+        { "question": "Bietet ihr Mehr-Wochen-Aufenthalte im Soul Surfer an?", "answer": "Ja — viele Soul-Surfer-Gäste bleiben 2–4 Wochen für echten Fortschritt. Wir bieten reduzierte Wochenraten für längere Aufenthalte und können den Surf-Plan an deine Ziele anpassen (z. B. fokussiertes Coaching zu Tube-Positioning, Paddel-Fitness oder Wellenlesen). Kontaktiere uns über /contact für ein individuelles Mehr-Wochen-Angebot." }
+      ]
+    }
+  },
   "activities1": {
     "eyebrow": "Was dich erwartet",
     "heading": "Aktivitäten",
@@ -1151,8 +1182,8 @@
   },
 
   "headerTs2": {
-    "title": "The Surfer TS2 Camp",
-    "tagline": "Dein ultimatives Surfcamp-Erlebnis",
+    "title": "The Surfer TS2 Camp Weligama",
+    "tagline": "Günstiges Surfcamp Sri Lanka — dein ultimatives Surfcamp-Erlebnis",
     "aria": { "section": "TS2-Header-Bereich" }
   },
   
@@ -1172,8 +1203,8 @@
   },
 
   "headerSoulSurfer": {
-    "title": "Soul Surfer Camp",
-    "tagline": "Ein unabhängiges Retreat für engagierte Surfer",
+    "title": "Soul Surfer Camp Weligama",
+    "tagline": "Ein unabhängiges Surfcamp Sri Lanka Retreat für engagierte Surfer",
     "aria": { "section": "Soul Surfer Header-Bereich" }
   },
 

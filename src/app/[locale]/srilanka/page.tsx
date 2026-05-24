@@ -11,14 +11,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'Surf Camp Sri Lanka — Winter Sun Surfing in Weligama',
-    de: 'Surfcamp Sri Lanka — Wintersonne & Wellen in Weligama',
+    en: 'Surf Camp Sri Lanka — Top Rated in Weligama · The Surfer 4.9★',
+    de: 'Surfcamp Sri Lanka — Top bewertet in Weligama · The Surfer 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'Sri Lanka is Europe’s best winter surf destination — 10-hour flight, +5.5h timezone, 28 °C water, consistent waves Nov–Apr. Three camps in Weligama for every budget. ISA-certified instructors.',
+      "Top-rated surf camp Sri Lanka in Weligama Bay — 28°C water, consistent waves Nov–Apr, ISA-certified instructors, beachfront stay. 3 camps for every budget. 4.9★ 1600+ reviews, 6× Tripadvisor Travellers' Choice.",
     de:
-      'Sri Lanka ist Europas bestes Winter-Surfziel — 10 Stunden Flug, +5,5h Zeitzone, 28 °C Wassertemperatur, konstante Wellen Nov–Apr. Drei Camps in Weligama für jedes Budget. ISA-zertifizierte Surflehrer.',
+      'Top-bewertetes Surfcamp Sri Lanka in Weligama Bay — 28°C Wasser, konstante Wellen Nov–Apr, ISA-zertifizierte Surflehrer, Strandunterkunft. 3 Camps für jedes Budget. 4,9★ 1600+ Bewertungen, 6× Tripadvisor.',
   };
   return buildPageMetadata({
     slug: '/srilanka',

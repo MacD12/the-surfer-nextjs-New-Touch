@@ -1,8 +1,10 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import JsonLd, { type StructuredData } from '@/components/seo/JsonLd';
-import { CAMPS_DATA, campSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { CAMPS_DATA, campSchema, breadcrumbSchema, faqSchema } from '@/lib/structured-data';
 import SoulSurferClient from './SoulSurferClient';
+
+type FaqItem = { question: string; answer: string };
 
 export async function generateMetadata({
   params,
@@ -11,14 +13,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'Soul Surfer Camp Sri Lanka — Independent Surf Retreat Weligama',
-    de: 'Soul Surfer Camp Sri Lanka — Unabhängiges Surf-Retreat Weligama',
+    en: 'Soul Surfer Camp Weligama — Premium Surf Retreat Sri Lanka · 4.9★',
+    de: 'Soul Surfer Camp Weligama — Premium Surf-Retreat Sri Lanka · 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'Soul Surfer Camp — independent retreat in Weligama for the dedicated surfer. Rooftop infinity pool, rooftop restaurant with panoramic sea views, own private schedule of sessions. 4.9 ⭐ 1600+ reviews.',
+      'Premium surf retreat in Weligama, Sri Lanka — Soul Surfer Camp. Rooftop infinity pool, sea-view restaurant, rooftop yoga, own private schedule of surf sessions. For dedicated European surfers. 4.9★ 1600+ reviews.',
     de:
-      'Soul Surfer Camp — unabhängiges Retreat in Weligama für den engagierten Surfer. Rooftop-Infinity-Pool, Dachterrassen-Restaurant mit Panoramablick aufs Meer, eigener privater Surf-Plan. 4,9 ⭐ 1600+ Bewertungen.',
+      'Premium Surf-Retreat in Weligama, Sri Lanka — Soul Surfer Camp. Rooftop-Infinity-Pool, Restaurant mit Meerblick, Rooftop-Yoga, eigener privater Surf-Plan. Für engagierte europäische Surfer. 4,9★ 1600+ Bewertungen.',
   };
   return buildPageMetadata({
     slug: '/soul-surfer',
@@ -38,12 +40,17 @@ export default async function SoulSurferPage({
   setRequestLocale(locale);
 
   const camp = CAMPS_DATA.find((c) => c.id === 'soul')!;
+  const messages = (await getMessages()) as Record<string, unknown>;
+  const faqItems =
+    ((messages.campFaq as { soul?: { items?: FaqItem[] } } | undefined)?.soul?.items) || [];
+
   const schemas: StructuredData[] = [
     campSchema(camp, locale),
     breadcrumbSchema(locale, [
       { name: 'Sri Lanka', slug: '/srilanka' },
       { name: camp.name, slug: camp.slug },
     ]),
+    ...(faqItems.length ? [faqSchema(faqItems)] : []),
   ];
 
   return (

@@ -9,6 +9,7 @@ import Package from '@/components/beach_camp/Package';
 import SurfDays from '@/components/beach_camp/SurfDays';
 import ComfortableStays from '@/components/beach_camp/ComfortableStays';
 import CampLocationCard from '@/components/CampLocationCard';
+import CampFaq from '@/components/CampFaq';
 import { Footer } from '@/components/Footer';
 
 const CampsMap = dynamic(() => import('@/components/srilanka/CampsMap'), {
@@ -148,6 +149,8 @@ export default function BeachCampClient() {
           </div>
         </div>
       </section>
+
+      <CampFaq campKey="beach" />
 
       <Footer />
     </div>

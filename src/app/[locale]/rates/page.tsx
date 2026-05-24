@@ -14,12 +14,12 @@ export async function generateMetadata({
     slug: '/rates',
     title:
       locale === 'de'
-        ? 'Surfcamp Preise — Pakete für Sri Lanka & Marokko (EUR)'
-        : 'Surf Camp Rates — Packages for Sri Lanka & Morocco (EUR)',
+        ? 'Surfcamp Preise Sri Lanka & Marokko — EUR · The Surfer'
+        : 'Surf Camp Prices Sri Lanka & Morocco — EUR · The Surfer',
     description:
       locale === 'de'
-        ? 'Transparente Preise in EUR für alle Surfcamp-Pakete, Zimmerkategorien und Zusatz-Aktivitäten. Beach Camp, TS2, Soul Surfer und SurfStyle Marokko.'
-        : 'Transparent EUR pricing for all surf camp packages, room types, and add-on activities. Beach Camp, TS2, Soul Surfer and SurfStyle Morocco.',
+        ? 'Transparente Surfcamp-Preise in EUR für Sri Lanka (Weligama) und Marokko (Tamraght). Alle Pakete, Zimmer- und Schlafsaalkategorien. Beach Camp, TS2, Soul Surfer, SurfStyle. Direkt buchen, beste Preise.'
+        : 'Transparent surf camp prices in EUR for Sri Lanka (Weligama) and Morocco (Tamraght). All packages, room and dorm categories. Beach Camp, TS2, Soul Surfer, SurfStyle. Book direct for best rates.',
     image: '/rates.jpg',
     locale,
   });

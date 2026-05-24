@@ -12,14 +12,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'Surf Camp Sri Lanka & Morocco — Winter Sun Surfing for Europeans',
-    de: 'Surfcamp Sri Lanka & Marokko — Wintersonne & Wellen für Europäer',
+    en: 'Surf Camp Sri Lanka & Morocco · The Surfer · 4.9★ 1600+ Reviews',
+    de: 'Surfcamp Sri Lanka & Marokko · The Surfer · 4,9★ 1600+ Bewertungen',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'Europe’s favourite winter-sun surf camp. The Surfer in Weligama Sri Lanka and Tamraght Morocco — ISA-certified instructors, beachfront stay, all levels. 1600+ ⭐ 4.9 Google reviews. Book your surf trip from any EU hub.',
+      "Top-rated surf camp Sri Lanka in Weligama + partner camp Tamraght Morocco. ISA-certified instructors, beachfront stay, all levels. 4.9★ 1600+ reviews, 6× Tripadvisor Travellers' Choice. Book direct from any EU hub.",
     de:
-      'Das beliebteste Wintersonne-Surfcamp Europas. The Surfer in Weligama (Sri Lanka) und Tamraght (Marokko) — ISA-zertifizierte Surflehrer, Strandunterkunft, alle Levels. 1600+ ⭐ 4.9 Google-Bewertungen. Direkt aus jedem EU-Hub buchen.',
+      'Top-bewertetes Surfcamp Sri Lanka in Weligama + Partnercamp Tamraght Marokko. ISA-zertifizierte Surflehrer, Strandunterkunft, alle Levels. 4,9★ 1600+ Bewertungen, 6× Tripadvisor Travellers’ Choice. Direkt aus jedem EU-Hub buchen.',
   };
   return buildPageMetadata({
     slug: '',

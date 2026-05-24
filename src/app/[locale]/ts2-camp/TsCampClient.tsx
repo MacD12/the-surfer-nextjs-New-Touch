@@ -8,6 +8,7 @@ import ImageCard from '@/components/ts_camp/ImageCard';
 import ComfortableStays from '@/components/ts_camp/ComfortableStays';
 import Package from '@/components/ts_camp/Package';
 import CampLocationCard from '@/components/CampLocationCard';
+import CampFaq from '@/components/CampFaq';
 import { Footer } from '@/components/Footer';
 
 const CampsMap = dynamic(() => import('@/components/srilanka/CampsMap'), {
@@ -139,6 +140,8 @@ export default function TsCampClient() {
           </div>
         </div>
       </section>
+
+      <CampFaq campKey="ts2" />
 
       <Footer />
     </div>

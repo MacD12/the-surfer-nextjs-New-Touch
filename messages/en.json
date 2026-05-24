@@ -315,7 +315,7 @@
     "cards": [
       {
         "images": ["/beach_camp/11.jpg", "/beach_camp/I3.jpg", "/beach_camp/image_1.jpg", "/beach_camp/act1.jpg"],
-        "topic": "The Surfer Beach Surf Camp",
+        "topic": "The Surfer Beach Camp",
         "body1": "Join us at the ultimate destination for surf enthusiasts. Experience the thrill of riding the waves and enjoy the serene beauty of the ocean.",
         "link": "/beach-camp"
       },
@@ -401,8 +401,8 @@
   },
   "headers": {
     "beach": {
-      "title": "The Surfer Beach Camp",
-      "subtitle": "Your ultimate beach surf camp experience",
+      "title": "The Surfer Beach Camp Weligama",
+      "subtitle": "Beachfront surf camp Sri Lanka — your ultimate beach surf camp experience",
       "bgImage": "/beachcamp.jpg"
     }
   },
@@ -751,7 +751,7 @@
   "camps": {
     "cards": {
       "beach": {
-        "topic": "The Surfer Beach Surf Camp",
+        "topic": "The Surfer Beach Camp",
         "body": "Join us at the ultimate destination for surf enthusiasts. Experience the thrill of riding the waves and enjoy the serene beauty of the ocean."
       },
       "ts2": {
@@ -995,6 +995,37 @@
       "cta": "Go to packages and rates"
     }
   },
+  "campFaq": {
+    "heading": "Frequently Asked Questions",
+    "eyebrow": "Good to know",
+    "beach": {
+      "items": [
+        { "question": "Is The Surfer Beach Camp Weligama good for beginners?", "answer": "Yes — Weligama Bay is one of the best beginner surf spots in Sri Lanka. The Surfer Beach Camp sits directly on the bay with a gentle sandy bottom, slow rolling whitewater, and zero reef or strong currents. ISA-certified instructors give daily lessons, with soft-top boards included in every surf package." },
+        { "question": "What is included in the Beach Camp surf package?", "answer": "Every package includes accommodation, daily breakfast, two surf lessons per day (Mon–Sat), board and rashguard rental, video analysis sessions, and access to the on-site pool and yoga area. Half board (with dinner) and full board options are available — see /rates for the current price list." },
+        { "question": "When is the best time to surf at The Surfer Beach Camp Weligama?", "answer": "The south-west coast season runs roughly November through April, with the most consistent waves December to March. Outside that window the bay is still surfable for beginners on most days, but our peak European booking season is the winter months. Water stays around 27–28 °C year-round, so no wetsuit needed." },
+        { "question": "How far is Beach Camp from the airport?", "answer": "About 2.5 hours by car from Colombo Bandaranaike International Airport (CMB). We arrange private airport transfers on request — easiest is to add the transfer when you book. Public bus and train options are available but take 4–5 hours." },
+        { "question": "Do I need to know how to swim?", "answer": "Yes. All guests must be confident swimmers in open water. Surfing happens in waist-to-chest-deep water near the beach, but you need to be comfortable enough to handle yourself if you fall off the board." }
+      ]
+    },
+    "ts2": {
+      "items": [
+        { "question": "What's the difference between TS2 Camp and Beach Camp?", "answer": "TS2 is our budget option — same Weligama location, simpler private rooms with AC and ensuite, but a 5-minute shuttle ride from Beach Camp. All surf lessons, yoga sessions, breakfasts, dinners, and events take place AT Beach Camp. You sleep cheaper at TS2, but socialise and surf at Beach Camp with everyone else." },
+        { "question": "Is the shuttle between TS2 and Beach Camp included?", "answer": "We compensate transport at LKR 1,000 per room or dorm bed per day — covers tuk-tuks or scooter taxis both ways. The 5-minute ride between the two camps is short and easy, and you can also walk it in about 20 minutes if you prefer." },
+        { "question": "Do TS2 guests get the same surf lessons as Beach Camp guests?", "answer": "Yes — identical. Same ISA-certified instructors, same beach, same boards, same group sizes. The only difference is where you sleep at night." },
+        { "question": "Are meals served at TS2 Camp?", "answer": "All daily meals (breakfast, optional dinner) are served at Beach Camp, where the kitchen and restaurant are. TS2 is purely accommodation. This is what lets us keep the TS2 price low without compromising the food experience." },
+        { "question": "Who is TS2 Camp best for?", "answer": "Solo European travellers and couples on a tighter budget who still want the full surf-camp experience — the same lessons, same crew, same activities — but pay less for their bed at night. If you mostly come back to your room to sleep and shower, TS2 gives you the best value-for-money surf trip in Sri Lanka." }
+      ]
+    },
+    "soul": {
+      "items": [
+        { "question": "How is Soul Surfer Camp different from Beach Camp and TS2?", "answer": "Soul Surfer is an independent retreat. Different location in Weligama, own private surf schedule, rooftop infinity pool with sea views, rooftop restaurant, rooftop yoga area. It runs entirely on its own rhythm — separate from the Beach Camp / TS2 daily flow. Built for dedicated surfers who want focus and progression." },
+        { "question": "Who is Soul Surfer Camp best for?", "answer": "Intermediate and advanced European surfers who want serious water time without the busier social scene of Beach Camp. Also a great choice for those wanting a more design-led, quieter stay with sea-view yoga and a smaller group atmosphere." },
+        { "question": "Is the rooftop infinity pool open to all guests?", "answer": "Yes — every Soul Surfer guest has full access to the rooftop infinity pool, rooftop restaurant, and rooftop yoga area as part of their stay. The whole rooftop is what makes Soul Surfer feel like a retreat rather than just a camp." },
+        { "question": "Can Soul Surfer guests join Beach Camp activities?", "answer": "Not by default — Soul Surfer is fully independent with its own surf, yoga, and meal schedule. If you want to drop in on a Beach Camp event (e.g. a boat party or pool party), we can arrange it on a per-event basis. Most Soul Surfer guests prefer the quieter, focused vibe of the retreat." },
+        { "question": "Do you offer multi-week stays at Soul Surfer?", "answer": "Yes — many Soul Surfer guests stay 2-4 weeks for serious progression. We offer reduced weekly rates for longer stays and can adjust the surf schedule to your goals (e.g. focused coaching on barrel positioning, paddle fitness, or wave reading). Get in touch via /contact for a custom multi-week quote." }
+      ]
+    }
+  },
   "activities1": {
     "eyebrow": "Things to do",
     "heading": "Activities",
@@ -1148,8 +1179,8 @@
   },
 
   "headerTs2": {
-    "title": "The Surfer TS2 Camp",
-    "tagline": "Your ultimate surf camp experience",
+    "title": "The Surfer TS2 Camp Weligama",
+    "tagline": "Budget surf camp Sri Lanka — your ultimate surf camp experience",
     "aria": { "section": "TS2 header section" }
   },
 
@@ -1169,8 +1200,8 @@
   },
 
   "headerSoulSurfer": {
-    "title": "Soul Surfer Camp",
-    "tagline": "An independent retreat for the dedicated surfer",
+    "title": "Soul Surfer Camp Weligama",
+    "tagline": "An independent surf camp Sri Lanka retreat for the dedicated surfer",
     "aria": { "section": "Soul Surfer header section" }
   },
 

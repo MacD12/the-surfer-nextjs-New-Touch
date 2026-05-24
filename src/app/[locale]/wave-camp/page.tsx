@@ -14,12 +14,12 @@ export async function generateMetadata({
     slug: '/wave-camp',
     title:
       locale === 'de'
-        ? 'Wave Surfcamp Sri Lanka — Weligama Bay'
-        : 'Wave Surf Camp Sri Lanka — Weligama Bay',
+        ? 'Wave Surfcamp Weligama Bay — Sri Lanka · The Surfer 4,9★'
+        : 'Wave Surf Camp Weligama Bay — Sri Lanka · The Surfer 4.9★',
     description:
       locale === 'de'
-        ? 'Wave Surfcamp von The Surfer — geführte Lektionen, Premium-Unterkunft und die besten Wellen von Weligama Bay.'
-        : 'Wave Surf Camp by The Surfer — guided lessons, premium accommodation, and the best breaks in Weligama Bay.',
+        ? 'Wave Surfcamp Sri Lanka in Weligama Bay — geführte Surfkurse, Premium-Unterkunft, beste Wellen der Südküste. ISA-zertifizierte Surflehrer. 4,9★ 1600+ Bewertungen.'
+        : 'Wave Surf Camp Sri Lanka in Weligama Bay — guided lessons, premium accommodation, the best breaks on the south coast. ISA-certified instructors. 4.9★ 1600+ reviews.',
     image: '/wave.jpg',
     locale,
   });

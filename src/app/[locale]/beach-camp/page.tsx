@@ -1,8 +1,10 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import JsonLd, { type StructuredData } from '@/components/seo/JsonLd';
-import { CAMPS_DATA, campSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { CAMPS_DATA, campSchema, breadcrumbSchema, faqSchema } from '@/lib/structured-data';
 import BeachCampClient from './BeachCampClient';
+
+type FaqItem = { question: string; answer: string };
 
 export async function generateMetadata({
   params,
@@ -11,14 +13,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'Beach Surf Camp Sri Lanka — Beachfront in Weligama',
-    de: 'Beach Surfcamp Sri Lanka — direkt am Strand in Weligama',
+    en: 'Beach Surf Camp Weligama — Beachfront Sri Lanka · 4.9★',
+    de: 'Beach Surfcamp Weligama — direkt am Strand Sri Lanka · 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'The Surfer Beach Camp in Weligama — steps from the south coast surf break. ISA-certified instructors, pool, restaurant, yoga area. Peak European season Nov–Apr. 4.9 ⭐ 1600+ reviews.',
+      "The Surfer Beach Camp Weligama — beachfront surf camp Sri Lanka with on-site pool, restaurant, yoga area. ISA-certified surf lessons for all levels. Peak European season Nov–Apr. 4.9★ 1600+ reviews, 6× Tripadvisor Travellers' Choice.",
     de:
-      'The Surfer Beach Camp in Weligama — direkt an der Surf-Welle der Südküste. ISA-zertifizierte Surflehrer, Pool, Restaurant, Yoga-Bereich. Europäische Hauptsaison Nov–Apr. 4,9 ⭐ 1600+ Bewertungen.',
+      'The Surfer Beach Camp Weligama — Surfcamp Sri Lanka direkt am Strand mit Pool, Restaurant und Yoga-Bereich. ISA-zertifizierte Surfkurse für alle Levels. EU-Hauptsaison Nov–Apr. 4,9★ 1600+ Bewertungen, 6× Tripadvisor.',
   };
   return buildPageMetadata({
     slug: '/beach-camp',
@@ -38,12 +40,17 @@ export default async function BeachCampPage({
   setRequestLocale(locale);
 
   const camp = CAMPS_DATA.find((c) => c.id === 'beach')!;
+  const messages = (await getMessages()) as Record<string, unknown>;
+  const faqItems =
+    ((messages.campFaq as { beach?: { items?: FaqItem[] } } | undefined)?.beach?.items) || [];
+
   const schemas: StructuredData[] = [
     campSchema(camp, locale),
     breadcrumbSchema(locale, [
       { name: 'Sri Lanka', slug: '/srilanka' },
       { name: camp.name, slug: camp.slug },
     ]),
+    ...(faqItems.length ? [faqSchema(faqItems)] : []),
   ];
 
   return (

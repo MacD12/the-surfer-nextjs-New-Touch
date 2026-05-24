@@ -14,12 +14,12 @@ export async function generateMetadata({
     slug: '/faq',
     title:
       locale === 'de'
-        ? 'Surfcamp FAQ — Fragen vor der Buchung'
-        : 'Surf Camp FAQ — Questions Before You Book',
+        ? 'Surfcamp Sri Lanka & Marokko FAQ — Buchungs-Fragen · The Surfer'
+        : 'Surf Camp Sri Lanka & Morocco FAQ — Booking Questions · The Surfer',
     description:
       locale === 'de'
-        ? 'Antworten auf die häufigsten Fragen unserer europäischen Gäste — Reisezeit, Visa, Anfänger-Surfen, Unterkunft, Stornierung. The Surfer Sri Lanka & Marokko.'
-        : 'Answers to the most common questions from our European guests — best time to visit, visas, beginner surf, accommodation, cancellation. The Surfer Sri Lanka & Morocco.',
+        ? 'Antworten zu Surfcamp Sri Lanka & Marokko — beste Reisezeit, Visa, Anfänger-Surfen, Unterkunft, Stornierung, Transfer. Alles, was du vor der Buchung wissen musst. The Surfer Weligama & Tamraght.'
+        : 'Answers about surf camp Sri Lanka & Morocco — best time to visit, visas, beginner surfing, accommodation, cancellation, airport transfers. Everything you need before booking. The Surfer Weligama & Tamraght.',
     image: '/faq.jpg',
     locale,
   });

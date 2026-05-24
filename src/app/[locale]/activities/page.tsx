@@ -14,12 +14,12 @@ export async function generateMetadata({
     slug: '/activities',
     title:
       locale === 'de'
-        ? 'Aktivitäten Sri Lanka — Yoga, Bootstouren, Schnorcheln & mehr'
-        : 'Surf Camp Activities — Yoga, Boat Trips, Snorkelling & More',
+        ? 'Aktivitäten Surfcamp Sri Lanka — Yoga, Walbeobachtung · The Surfer'
+        : 'Surf Camp Sri Lanka Activities — Yoga, Whale Watching · The Surfer',
     description:
       locale === 'de'
-        ? 'Neben dem Surfen: Yoga, Bootstouren, Schnorcheln, Walbeobachtung, Kulturtouren. Alles vom The Surfer Beach Camp in Weligama buchbar — perfekt für europäische Reisende.'
-        : 'Beyond surfing — yoga, boat trips, snorkelling, whale watching, cultural tours. All bookable from The Surfer Beach Camp in Weligama — built for European travellers.',
+        ? 'Beyond Surfing in Weligama: tägliches Yoga, Bootstouren, Schnorcheln, Walbeobachtung in Mirissa, Kulturtouren (Galle, Tee-Plantagen). Alles vom The Surfer Beach Camp Sri Lanka buchbar.'
+        : 'Beyond surfing in Weligama — daily yoga, boat trips, snorkelling, whale watching in Mirissa, cultural tours (Galle, tea plantations). All bookable from The Surfer Beach Camp Sri Lanka.',
     image: '/activities.jpg',
     locale,
   });

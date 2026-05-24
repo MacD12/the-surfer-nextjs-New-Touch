@@ -8,6 +8,7 @@ import ImageCard from '@/components/soul_surfer/ImageCard';
 import Package from '@/components/soul_surfer/Package';
 import ComfortableStaysSoul from '@/components/soul_surfer/ComfortableStays';
 import CampLocationCard from '@/components/CampLocationCard';
+import CampFaq from '@/components/CampFaq';
 import { Footer } from '@/components/Footer';
 
 const CampsMap = dynamic(() => import('@/components/srilanka/CampsMap'), {
@@ -139,6 +140,8 @@ export default function SoulSurferClient() {
           </div>
         </div>
       </section>
+
+      <CampFaq campKey="soul" />
 
       <Footer />
     </div>

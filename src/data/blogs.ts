@@ -35,6 +35,388 @@ export function findPostBySlug(slug: string): BlogPost | undefined {
 
 export const blogsData: BlogPost[] = [
   {
+    "id": 100,
+    "title": "Best Time to Surf in Sri Lanka — A Month-by-Month Guide for Europeans",
+    "date": "2026-05-21",
+    "description": "Sri Lanka's south coast (Weligama) and east coast (Arugam Bay) have opposite seasons. Here's a month-by-month breakdown of swell, wind, water temperature and crowds — so you book the right side of the island at the right time.",
+    "image": "/blogs/blog1.jpg",
+    "content": `If you're planning a surf trip to Sri Lanka, the single most important decision is WHEN you go — because Sri Lanka has two surf coasts with opposite seasons, and getting it wrong means flying 10 hours to find flat water.
+
+This guide breaks down month by month: where to surf, what to expect, and why Europeans love Sri Lanka's south coast from November to April.
+
+The two-season rule
+
+Sri Lanka's south and west coast (Weligama, Mirissa, Hikkaduwa) is best from November through April. This is the dry season here — offshore winds in the morning, glassy clean waves, water temperature around 27–28 °C. This is when our Weligama surf camps run at full capacity with European guests.
+
+The east coast (Arugam Bay) is the opposite: best from May to September, when monsoon winds shift offshore on that side of the island.
+
+So if you're flying from Europe in your winter (November–April), the south coast — and specifically Weligama Bay — is exactly where you want to be.
+
+Month-by-month south coast surf forecast
+
+November: Season opens. Wave size builds through the month from knee-high to chest-high. Light morning offshores. Smaller crowds — best month for advanced beginners and intermediates wanting to upgrade before peak. Water 28 °C.
+
+December: Consistent waist-to-chest waves. Light winds. School holidays bring more European travellers — book accommodation early, especially Christmas / New Year week. Excellent learn-to-surf conditions.
+
+January: Peak season. Waves are clean and consistent — chest to head-high on the better days. Mornings are reliably offshore. Busiest month for surf camp bookings. Plan ahead.
+
+February: Same conditions as January. Slightly fewer crowds after the holiday rush. Many returning European guests pick February for the best balance of crowds vs. wave quality.
+
+March: Still excellent. Water slightly warmer, slightly fewer big swells but very consistent waist-to-chest playful waves. Great for skill progression.
+
+April: Season winds down. Conditions are still surfable, but afternoon onshore winds get more frequent. End of April is when we wrap up the European peak.
+
+May–October: South coast is unpredictable — monsoon brings onshore winds, choppy water. We close most south coast packages and either redirect guests to Arugam Bay or to our Morocco partner camp at Tamraght.
+
+What you should book
+
+If you're a beginner: December–March is the sweet spot. Soft rolling waves at Weligama Bay, sandy bottom, no reef, no currents. Beginner heaven.
+
+If you're an intermediate looking to progress: November and February. Fewer crowds, real wave shape.
+
+If you want guaranteed waves and don't mind crowds: January.
+
+Why Weligama specifically?
+
+Weligama Bay is widely regarded as Sri Lanka's best beginner and intermediate surf bay. The bay is over 2 km of sandy beach, the waves break gently and consistently, and there are no rocks or strong currents. It's also where The Surfer runs three of our surf camps — Beach Camp, TS2 and Soul Surfer — all within minutes of the bay.
+
+Ready to book your Sri Lanka surf trip? See our packages and prices, or get in touch and we'll help you pick the right month for your level.`
+  },
+
+  {
+    "id": 101,
+    "title": "Surf Camp Sri Lanka for Beginners — Everything You Need to Know",
+    "date": "2026-05-21",
+    "description": "Never surfed before? Here's exactly what to expect at a beginner-friendly surf camp in Sri Lanka — from your first lesson to how soft-tops work, what to pack, and why Weligama is the world's best place to learn.",
+    "image": "/blogs/blog2.jpg",
+    "content": `If you've never stood on a surfboard but you've been dreaming about it, Sri Lanka is one of the best places on earth to take that first step. Here's exactly what to expect at a beginner-friendly surf camp Sri Lanka, and why it's the perfect starting point.
+
+Why Sri Lanka is the easiest place to learn to surf
+
+Three things make Sri Lanka — and specifically Weligama Bay — beginner-friendly:
+
+Warm water (27–28 °C year-round) — no wetsuit needed, no shock when you fall in, longer time in the water without getting cold.
+
+Sandy beach bottom — Weligama Bay is sand all the way out. No rocks, no reef. If you fall, you fall on sand or in water deep enough to be safe.
+
+Gentle, consistent waves — the bay's geography breaks the swell down into soft rolling whitewater, perfect for learning to pop up.
+
+By contrast, learning in places like Portugal or Indonesia means cold water, board-shop reefs, or waves that are too punchy for a beginner's first lessons.
+
+Your first day at a Sri Lanka surf camp
+
+At The Surfer Beach Camp Weligama, your first day looks like this:
+
+7:00 — Sunrise wake-up, light breakfast at the camp restaurant.
+
+8:00 — Theory session on the beach. Your ISA-certified instructor walks you through wave anatomy, paddle technique, the "pop up", surf safety and ocean etiquette.
+
+8:30 — Practice on the sand — pop-ups, paddle position, foot placement. This builds muscle memory before you ever touch water.
+
+9:00 — In the water. The first hour is whitewater (the soft foam after a wave has broken). Your instructor pushes you into waves so you can focus on standing up.
+
+10:30 — Cool down, video analysis if booked. Instructors film and review your sessions.
+
+11:30 — Brunch. Big meal — you'll be hungry.
+
+Afternoon — Free time, optional yoga at 4 pm, second surf session for some packages.
+
+Evening — Sunset on the rooftop, dinner together, get to know fellow guests.
+
+The boards you'll learn on
+
+Beginners ride soft-top boards — 8 to 9 feet long, super buoyant, very forgiving. Wide, stable, easy to paddle. We provide these and rash guards in every package.
+
+As you progress (usually after 3–5 days), instructors graduate you to shorter and harder boards.
+
+What to pack
+
+A swimsuit you can move in (board shorts for men, a one-piece or surf-specific bikini for women).
+
+Reef-safe sunscreen (SPF 50+).
+
+A hat for non-surfing time.
+
+That's about it — boards, rash guards, towels, and yoga mats are all provided.
+
+How long should you stay?
+
+We recommend at least 7 nights for a meaningful learning curve. In one week of daily lessons most beginners go from "never stood on a board" to "catching unbroken waves on their own". Two weeks and you're surfing the green wave with style.
+
+Group sizes and instructor ratios
+
+We cap lessons at 4 students per instructor. That means you actually get personal attention, not just a wave-pusher in a crowd of 12.
+
+What if I can't swim?
+
+You need to be a confident swimmer. Surfing happens in chest-deep water near shore, but you must be comfortable handling yourself if you fall.
+
+What if I'm scared?
+
+Everyone is. That's normal. Our ISA-certified instructors are trained to read your comfort level and start you exactly where you're ready. Most guests catch their first wave on day one.
+
+Ready to start?
+
+Browse our surf camp Sri Lanka packages or contact us with questions. We answer in English and German.`
+  },
+
+  {
+    "id": 102,
+    "title": "Weligama vs Arugam Bay — Which Sri Lanka Surf Spot is Right for You?",
+    "date": "2026-05-21",
+    "description": "Sri Lanka has two famous surf coasts — Weligama on the south and Arugam Bay on the east. They have opposite seasons, different wave shapes, and very different vibes. Here's how to pick.",
+    "image": "/blogs/blog3.jpg",
+    "content": `If you're researching surf trips to Sri Lanka, two place names come up over and over: Weligama and Arugam Bay. Both are world-famous surf spots. Both are on the same island. But they could not be more different — opposite coasts, opposite seasons, opposite levels.
+
+Here's the honest comparison so you book the right one for you.
+
+Season
+
+Weligama (south coast): Best November–April. Offshore winds, glassy mornings, consistent waves. This overlaps perfectly with European winter — which is why Weligama is Europe's #1 winter-sun surf destination.
+
+Arugam Bay (east coast): Best May–September. Same months Weligama is unsurfable. Arugam works in our summer when monsoon winds turn offshore on that side.
+
+Verdict: If you're flying from Europe in your winter, you want Weligama. Period.
+
+Wave type
+
+Weligama: A long sandy bay with multiple peaks. The waves break gently and rebroke close to shore. Forgiving, beginner-friendly, but also enough power for intermediate progression. Walk-in surfing.
+
+Arugam Bay: World-famous right-hand point break. Long, fast, powerful rides — but it's reef and rock at the bottom. Not a beginner spot.
+
+Verdict: Weligama is unbeatable for beginners and progressing intermediates. Arugam is for confident intermediates and advanced surfers.
+
+Atmosphere
+
+Weligama: Bustling small town with restaurants, cafes, yoga studios, juice bars. Lots of European travellers. Social, lively, easy to make friends. The Surfer Beach Camp, TS2 and Soul Surfer are all here.
+
+Arugam Bay: More remote, sleepier vibe. Smaller town, less infrastructure, more about the surf and less about the social scene. Beautiful, but quieter.
+
+Verdict: Want a social surf-trip experience? Weligama. Want a quieter, focused surf-trip? Arugam.
+
+Access from Europe
+
+Weligama: Fly into Colombo (CMB), then ~2.5h by car or 3.5h by train along the south coast. Total transit time from most European hubs: ~13–15 hours.
+
+Arugam Bay: Same Colombo arrival, then 6–8 hours of driving across the island. Tougher journey, especially after a long flight.
+
+Verdict: Weligama wins for ease and time-efficiency.
+
+Beginner vs advanced
+
+Beginner: Weligama. No contest.
+
+Intermediate progressing: Weligama (you'll get tons of waves) or Arugam (if you want a proper right-hander to learn line drawing).
+
+Advanced: Arugam in summer (point breaks). Weligama in winter (less hollow but still very fun, especially the outer reefs on bigger swells).
+
+Cost
+
+Both are affordable by global standards. Weligama has more accommodation tiers and more competition, so you can find anything from budget hostels to upscale boutique stays. Arugam tends to be more uniform mid-range.
+
+Our recommendation
+
+If you're a European traveller planning a winter surf trip, book Weligama. It's the right side of the island for your season, the easier journey, the more forgiving waves, the better social scene.
+
+If you're an advanced surfer planning a summer trip, Arugam is one of the best right-hand point breaks in Asia.
+
+The Surfer's three surf camps — Beach Camp, TS2 and Soul Surfer — are all in Weligama Bay. See our packages and prices for the winter season, or contact us with questions.`
+  },
+
+  {
+    "id": 103,
+    "title": "How Much Does a Surf Camp in Sri Lanka Cost? (2026 Pricing Guide)",
+    "date": "2026-05-21",
+    "description": "Honest pricing for a 7-night surf camp Sri Lanka trip — accommodation, lessons, food, flights, extras. Real numbers in EUR so you can plan your budget properly.",
+    "image": "/blogs/blog4.jpg",
+    "content": `One of the most common questions we get from European travellers is: "What's the realistic total cost of a surf camp in Sri Lanka?" Here's an honest 2026 pricing breakdown — accommodation, lessons, food, flights, and the extras most other guides forget.
+
+The big picture
+
+For a 7-night surf trip to Sri Lanka from Europe, expect to spend €900–€1,800 all-in per person, depending on your accommodation tier and how you book flights.
+
+That breaks down roughly as:
+
+— Surf camp package (room + lessons + breakfast): €300–€700
+— Flights: €450–€800
+— Extra meals + drinks: €70–€140
+— Airport transfers: €50–€80
+— Activities (yoga extras, boat trips, whale watching): €30–€100
+
+Let's walk through each.
+
+Surf camp package pricing
+
+This is where you have real choices. At The Surfer in Weligama, our three Sri Lanka camps cover three budget tiers for the same surf experience:
+
+TS2 Camp (budget): Private AC room, ensuite, breakfast, 2 surf lessons per day Mon–Sat, board hire, video analysis. From around €40 per night for a dorm bed, ~€55 per night for a private room. 7 nights ≈ €280–€385.
+
+Beach Camp (mid-range, beachfront): Same lesson package, but you sleep right at the beach with pool access. From around €70 per night standard private room. 7 nights ≈ €490.
+
+Soul Surfer Camp (premium retreat): Rooftop infinity pool, rooftop restaurant, independent surf schedule. From around €100 per night. 7 nights ≈ €700.
+
+All three camps share the same ISA-certified instructors and the same Weligama Bay surf. The price difference is purely accommodation tier and amenities.
+
+See our /rates page for exact current pricing.
+
+Flights from Europe
+
+Direct or 1-stop options to Colombo (CMB) usually run:
+
+— Frankfurt: €500–€800
+— Munich: €500–€800
+— Vienna: €550–€850
+— Zurich: €600–€900
+— London: €450–€750
+— Amsterdam: €500–€800
+
+Book 8–12 weeks in advance for the best prices. Avoid the December 22 – January 6 window if you want cheaper fares.
+
+Tip: 1-stop via Doha, Abu Dhabi or Dubai is often cheaper and not much longer than direct.
+
+Airport transfers
+
+Colombo airport (CMB) to Weligama is about 2.5 hours by car. Options:
+
+— Private taxi (we arrange): €50–€80 one-way per car (up to 4 people)
+— Train to Matara then tuk-tuk: ~€10 per person but adds 2 hours
+— Bus: €5 per person but ~5 hours total
+
+We recommend the private transfer for first-time visitors — you arrive at the camp tired, just sleep.
+
+Food and drinks
+
+Sri Lanka is cheap. Outside the camp breakfast we include, you'll spend roughly:
+
+— Lunch at a local restaurant: €3–€6
+— Dinner: €5–€10 (Western), €3–€7 (Sri Lankan)
+— Beer: €1.50–€3
+— Fresh juice or coconut: €1
+
+For 7 days of extra meals + drinks, budget €70–€140 per person.
+
+Optional extras
+
+— Whale watching in Mirissa: €30–€50 per person
+— Boat surf trip to outer reefs: €25–€40 per person
+— Cultural day trip (Galle / tea plantations): €40–€70 per person
+— Extra private surf lesson: €25–€35 per session
+
+Visa
+
+Sri Lanka requires a visa for most European travellers. The current ETA system is ~€38, applied online, fast turnaround.
+
+What you DON'T need to pay for
+
+— Surfboard rental — included in our packages
+— Rash guards — included
+— Yoga (group sessions) — included in most packages
+— Wifi — included
+— Breakfast — included (extra meals optional add-on)
+
+Realistic 7-night total examples
+
+Solo traveller, budget (TS2 + budget flight): €1,000–€1,200
+Couple, mid-range (Beach Camp + average flight): ~€2,000–€2,400 for two
+Solo traveller, premium (Soul Surfer + business class flight): €2,500+
+
+Compared to surf trips in Portugal, Indonesia or Costa Rica, Sri Lanka is excellent value for the wave quality, water temperature, and overall experience.
+
+Ready to plan? See our packages or get a personalised quote.`
+  },
+
+  {
+    "id": 104,
+    "title": "Sri Lanka Surf Forecast — How to Read Swell, Wind & Conditions in Weligama",
+    "date": "2026-05-21",
+    "description": "A practical guide to reading the Sri Lanka surf forecast — swell direction, wind direction, tide effects, and which forecasting sites to trust. Plan your perfect surf day at Weligama Bay.",
+    "image": "/blogs/blog5.jpg",
+    "content": `If you want to surf the best waves of your Sri Lanka trip, you need to understand the forecast — not just read a wave-height number. Here's how the south coast works, and which forecasting sites we actually use at The Surfer.
+
+The basics of Sri Lanka surf forecasting
+
+Wave-height number alone is misleading. A 1-metre swell with offshore wind and a long period can be beautifully shaped chest-high waves. A 1-metre swell with onshore wind and a short period can be a choppy mess. You have to read four things together: swell size, swell period, swell direction, and wind direction.
+
+Swell size (Weligama south coast)
+
+Best beginner range: 0.6–1.2 m. Soft, rolling, easy to catch. This is most days in November to April.
+
+Best intermediate range: 1.2–1.8 m. Real wave shape, faster rides, room for progression.
+
+Advanced: 1.8 m+ swells make the outer reefs and points come alive. You'll want a boat to access some of them.
+
+Anything above 2.5 m on the bay starts to get washy — better to head to outer reefs.
+
+Swell period
+
+This is the seconds between waves. Short period (8–10 sec) means weaker, wind-generated swell. Long period (12–16+ sec) means powerful ocean-generated swell — better shape, more push.
+
+In Sri Lanka's south-west season (Nov–Apr) the typical period is 10–14 seconds — clean, organised waves.
+
+Swell direction
+
+Weligama Bay faces south. Swells from south-west to south-south-west wrap into the bay beautifully. South-east swells don't reach the south coast at all.
+
+Wind direction
+
+Mornings in the Weligama dry season (Nov–Apr) are reliably offshore — winds coming from the north or north-east blow against the wave face, holding it up clean.
+
+By afternoon (usually after 11 am or noon), winds often turn onshore from the south-west. Waves get choppier. This is why every surf camp here runs morning lessons.
+
+Surf forecasting sites we use
+
+Surfline: Most popular globally. Has Sri Lanka coverage but can be slow to update.
+
+Magicseaweed (MSW): Was the standard for years. Now folded into Surfline.
+
+Windy.com: Excellent for wind direction — overlay swell on top.
+
+WindFinder: Quick wind check for the next few hours.
+
+Stormrider Asia: Good general info on the region.
+
+Honestly: ignore the long-range (10-day) forecasts. They're guesses. Trust the 48-hour forecast and check it the night before.
+
+Tides in Weligama
+
+Weligama Bay is largely tide-agnostic for beginners — the bay works at most tide stages. For intermediates, mid-tide pushing high is generally best. Outer reefs care more about tide.
+
+Tide range in Sri Lanka is small (around 0.5 m), so it's never as critical as it is in places like Indonesia or Portugal.
+
+What we tell beginner guests
+
+Don't worry about the forecast. Show up for your morning lesson, your instructor reads the conditions and adapts. That's literally their job.
+
+What we tell intermediate guests
+
+Check Windy.com the night before. If you see:
+— Wind under 10 knots from the N or NE,
+— Swell 1.0–1.8 m from the SW,
+— Period 11+ seconds,
+…you've got a beautiful morning ahead. Get to the beach by 7 am.
+
+What if forecast says "no waves"?
+
+There's almost always SOMETHING at Weligama Bay in season. Even on smaller days, beginner whitewater is still rideable. We've never had to cancel a lesson due to flat conditions in peak season.
+
+Where to surf when the bay is too small
+
+Plantations (10 min east) — picks up smaller south swells.
+Madiha Beach (10 min east) — works on tiny days.
+Outer reefs (boat access) — bigger swells.
+
+Where to surf when the bay is too big
+
+Inner reefs and the inside of the bay still work. Or go to a more sheltered beach like Mirissa.
+
+The takeaway
+
+Sri Lanka's south coast in winter is one of the most consistent surf destinations in the world. The forecast is rarely a problem — November to April you'll get plenty of surf days. Just pay attention to morning vs afternoon (always surf mornings if you can) and trust your instructor's call on the day.
+
+Ready to come surf with us? See our /rates or contact us in English or German.`
+  },
+
+  {
     "id": 1,
     "title": "Surf Ethics—5 rules that every beginner needs to know about",
     "description": "Surfing is a challenging sport, it requires patience, commitment, and a lot of practice. However, there are some rules that every beginner surfer needs to know about before they hit the waves. Getting to know these rules will help you become...",

@@ -14,12 +14,12 @@ export async function generateMetadata({
     slug: '/contact',
     title:
       locale === 'de'
-        ? 'Kontakt — The Surfer Surfcamp Sri Lanka & Marokko'
-        : 'Contact The Surfer — Surf Camp Sri Lanka & Morocco',
+        ? 'Kontakt The Surfer — Surfcamp Sri Lanka & Marokko buchen'
+        : 'Contact The Surfer — Book Surf Camp Sri Lanka & Morocco',
     description:
       locale === 'de'
-        ? 'Schreib uns auf Deutsch oder Englisch. Buchungsanfragen, Fragen vor der Reise, oder uns in Weligama, Sri Lanka besuchen.'
-        : 'Reach us in English or German. Book a camp, ask pre-trip questions, or visit us in Weligama, Sri Lanka.',
+        ? 'Surfcamp Sri Lanka oder Marokko buchen — schreib uns auf Deutsch oder Englisch. Schnelle Antwort per E-Mail, WhatsApp oder Telefon. Besuche uns in Weligama, Sri Lanka oder Tamraght, Marokko.'
+        : 'Book your surf camp Sri Lanka or Morocco trip — reach us in English or German. Fast response by email, WhatsApp or phone. Visit us in Weligama, Sri Lanka or Tamraght, Morocco.',
     image: '/contactus.jpg',
     locale,
   });

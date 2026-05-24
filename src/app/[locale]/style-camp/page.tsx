@@ -11,14 +11,14 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titleByLocale: Record<string, string> = {
-    en: 'SurfStyle Camp Morocco — Taghazout / Tamraght Surf Camp',
-    de: 'SurfStyle Camp Marokko — Surfcamp Taghazout / Tamraght',
+    en: 'SurfStyle Surf Camp Tamraght Morocco · The Surfer 4.9★',
+    de: 'SurfStyle Surfcamp Tamraght Marokko · The Surfer 4,9★',
   };
   const descByLocale: Record<string, string> = {
     en:
-      'The Surfer SurfStyle Camp in Tamraght, Morocco — a 4-hour direct flight from European hubs. Anchor Point and Killer Point on your doorstep, beginner to advanced coaching, optional yoga. Year-round surf, EU peak season Oct–Apr.',
+      "SurfStyle surf camp Tamraght Morocco — 4-hour direct flight from Europe. Anchor Point and Killer Point on your doorstep, beginner-to-advanced coaching, optional yoga, rooftop Atlantic views. Year-round waves, EU peak Oct–Apr. 4.9★ 1600+ reviews.",
     de:
-      'The Surfer SurfStyle Camp in Tamraght, Marokko — 4-Stunden-Direktflug von europäischen Hubs. Anchor Point und Killer Point direkt vor der Haustür, Anfänger- bis Fortgeschrittenen-Coaching, optionales Yoga. Ganzjährig surfen, EU-Hauptsaison Okt–Apr.',
+      'SurfStyle Surfcamp Tamraght Marokko — 4-Stunden-Direktflug aus Europa. Anchor Point und Killer Point direkt vor der Haustür, Anfänger- bis Fortgeschrittenen-Coaching, optionales Yoga, Atlantik-Dachterrasse. Ganzjährig Wellen, EU-Hauptsaison Okt–Apr. 4,9★ 1600+ Bewertungen.',
   };
   return buildPageMetadata({
     slug: '/style-camp',

@@ -54,7 +54,7 @@ export default function HomeClient() {
             video element can't be selected as the LCP candidate. */}
         <Image
           src="/surfcard1.jpg"
-          alt=""
+          alt="Surfers riding waves at The Surfer Beach Camp Weligama, Sri Lanka"
           fill
           priority
           fetchPriority="high"
@@ -187,7 +187,7 @@ export default function HomeClient() {
                   images={card1.images}
                   topic={card1.topic}
                   body1={card1.body1}
-                  link={card1.link}
+                  link={`/${locale}${card1.link}`}
                   index={0}
                 />
               </motion.div>
@@ -205,7 +205,7 @@ export default function HomeClient() {
                   images={card2.images}
                   topic={card2.topic}
                   body1={card2.body1}
-                  link={card2.link}
+                  link={`/${locale}${card2.link}`}
                   index={1}
                 />
               </motion.div>
@@ -223,7 +223,7 @@ export default function HomeClient() {
                   images={cardSoulSurfer.images}
                   topic={cardSoulSurfer.topic}
                   body1={cardSoulSurfer.body1}
-                  link={cardSoulSurfer.link}
+                  link={`/${locale}${cardSoulSurfer.link}`}
                   index={2}
                 />
               </motion.div>
@@ -282,7 +282,7 @@ export default function HomeClient() {
                   images={cardMorocco.images}
                   topic={cardMorocco.topic}
                   body1={cardMorocco.body1}
-                  link={cardMorocco.link}
+                  link={`/${locale}${cardMorocco.link}`}
                   index={3}
                 />
               </motion.div>
