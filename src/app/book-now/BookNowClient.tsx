@@ -175,9 +175,12 @@ const Country = () => {
     <>
       <BookingNavbar />
 
-      {/* Full-viewport on desktop (where cards sit side-by-side); on mobile, allow natural scroll so the stacked cards aren't clipped */}
-      <main className="min-h-screen md:h-screen md:overflow-hidden bg-gradient-to-b from-white via-cyan-50/40 to-white flex flex-col pt-[110px] pb-[130px] sm:pt-[120px] sm:pb-[140px] md:pb-[120px]">
-        <div className="md:flex-1 md:min-h-0 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col">
+      {/* Min-height viewport on all sizes — let the page grow naturally if
+          cards + header don't fit in 100vh (e.g. 13" laptops, 1366×768 PCs).
+          The previous `md:h-screen md:overflow-hidden` clipped the layout and
+          made cards visually overlap the heading on shorter viewports. */}
+      <main className="min-h-screen bg-gradient-to-b from-white via-cyan-50/40 to-white flex flex-col pt-[110px] pb-[130px] sm:pt-[120px] sm:pb-[140px] md:pb-[120px]">
+        <div className="flex-1 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col">
           {/* Compact Header */}
           <motion.div
             className="flex-shrink-0 text-center mb-4 sm:mb-6 max-w-2xl mx-auto"
@@ -206,9 +209,9 @@ const Country = () => {
             </p>
           </motion.div>
 
-          {/* Destination cards — vertically centered on desktop, naturally stacked on mobile */}
-          <div className="md:flex-1 md:min-h-0 max-w-4xl mx-auto w-full md:flex md:items-center md:justify-center">
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-7 lg:gap-8 items-center">
+          {/* Destination cards — naturally below the header; never overlap. */}
+          <div className="flex-1 max-w-4xl mx-auto w-full md:flex md:items-start md:justify-center">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-7 lg:gap-8 items-start">
               {DESTINATIONS.map((destination, idx) => (
                 <DestinationCard
                   key={destination.id}
