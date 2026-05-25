@@ -267,8 +267,8 @@ const DatePage = () => {
         }
       `}</style>
 
-      <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-gradient-to-b from-white via-cyan-50/30 to-white flex flex-col pt-[110px] sm:pt-[120px] pb-[130px] sm:pb-[140px]">
-        <div className="lg:flex-1 lg:min-h-0 mx-auto w-full max-w-6xl px-4 sm:px-6 flex flex-col">
+      <main className="min-h-screen bg-gradient-to-b from-white via-cyan-50/30 to-white flex flex-col pt-[96px] sm:pt-[104px] pb-[110px] sm:pb-[120px]">
+        <div className="flex-1 mx-auto w-full max-w-6xl px-4 sm:px-6 flex flex-col">
           {/* Compact header */}
           <motion.div
             className="flex-shrink-0 text-center mb-4 sm:mb-5 max-w-2xl mx-auto"

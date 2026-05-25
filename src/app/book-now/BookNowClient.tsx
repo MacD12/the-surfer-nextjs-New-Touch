@@ -67,7 +67,7 @@ const DestinationCard = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1 + index * 0.1, ease: 'easeOut' }}
       whileHover={{ y: -4 }}
-      className={`group relative w-full max-w-[420px] mx-auto aspect-[3/4] max-h-[560px] cursor-pointer overflow-hidden rounded-3xl bg-gray-200 shadow-xl ring-1 transition-all duration-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-cyan-400 ${
+      className={`group relative w-full max-w-[420px] mx-auto aspect-[3/4] max-h-[min(540px,calc(100vh-320px))] cursor-pointer overflow-hidden rounded-3xl bg-gray-200 shadow-xl ring-1 transition-all duration-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-cyan-400 ${
         isSelected
           ? 'ring-2 ring-cyan-400 shadow-cyan-500/30'
           : 'ring-black/5 hover:shadow-2xl hover:ring-cyan-300/60'
@@ -177,13 +177,16 @@ const Country = () => {
 
       {/* Min-height viewport on all sizes — let the page grow naturally if
           cards + header don't fit in 100vh (e.g. 13" laptops, 1366×768 PCs).
+          Paddings are tightened to clear the actual BookingNavbar (~88px) and
+          BookingFooter stepper (~100px), recovering ~50px of vertical space.
           The previous `md:h-screen md:overflow-hidden` clipped the layout and
           made cards visually overlap the heading on shorter viewports. */}
-      <main className="min-h-screen bg-gradient-to-b from-white via-cyan-50/40 to-white flex flex-col pt-[110px] pb-[130px] sm:pt-[120px] sm:pb-[140px] md:pb-[120px]">
+      <main className="min-h-screen bg-gradient-to-b from-white via-cyan-50/40 to-white flex flex-col pt-[96px] sm:pt-[104px] pb-[110px] sm:pb-[120px]">
         <div className="flex-1 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col">
-          {/* Compact Header */}
+          {/* Compact Header — scroll-margin keeps it visible below the fixed
+              BookingNavbar when the page is scrolled. */}
           <motion.div
-            className="flex-shrink-0 text-center mb-4 sm:mb-6 max-w-2xl mx-auto"
+            className="flex-shrink-0 text-center mb-4 sm:mb-5 max-w-2xl mx-auto scroll-mt-28"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
