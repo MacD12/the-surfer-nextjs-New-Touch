@@ -60,7 +60,7 @@ function LanguageSelect({ value, onChange, isScrolled, variant = 'desktop' }) {
   const CurrentIcon = current.Icon;
 
   return (
-    <div className={`${isMobile ? 'w-full' : 'w-40'} relative`} ref={ref}>
+    <div className={`${isMobile ? 'w-full' : 'w-32 lg:w-36'} relative`} ref={ref}>
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
@@ -227,7 +227,7 @@ const Navbar = () => {
       aria-label="Toggle menu"
       aria-expanded={isMenuOpen}
       className={`
-        md:hidden relative h-10 w-10 rounded-xl flex items-center justify-center
+        lg:hidden relative h-10 w-10 rounded-xl flex items-center justify-center
         transition-colors duration-200
         ${isScrolled ? 'text-gray-800 hover:text-cyan-600' : 'text-white hover:text-cyan-300'}
         focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 active:scale-95
@@ -244,7 +244,7 @@ const Navbar = () => {
       ref={navRef}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-white/20' : 'bg-transparent'}`}
     >
-      <div className="container mx-auto flex justify-between items-center py-3 sm:py-4 px-3 sm:px-6 md:px-8 lg:px-16">
+      <div className="container mx-auto flex justify-between items-center gap-3 py-3 sm:py-4 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-16">
         {/* Logo */}
         <Link href={lp('/')}>
           <Image
@@ -259,8 +259,9 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Center nav (desktop) */}
-        <ul className="hidden md:flex gap-4 lg:gap-7 text-sm lg:text-base relative">
+        {/* Center nav (desktop) — only at lg+ (1024px) where there's room for
+            7 items without crowding the logo or wrapping the BOOK NOW button. */}
+        <ul className="hidden lg:flex gap-4 xl:gap-6 text-sm xl:text-base relative whitespace-nowrap">
           <li><Link href={lp('/')} className={linkCls('/')}>{tx('navbar.home', 'HOME')}</Link></li>
 
           {/* DESTINATION (desktop click-to-open) */}
@@ -286,8 +287,8 @@ const Navbar = () => {
 
         {/* Right cluster */}
         <div className="flex items-center gap-2">
-          {/* Desktop: language + book now */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Desktop: language + book now — lg+ where the full nav shows */}
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3">
             <LanguageSelect
               value={locale}
               onChange={(lng) => changeLanguage(lng)}
@@ -298,18 +299,18 @@ const Navbar = () => {
               href="/book-now"
               target="_blank"
               rel="noreferrer"
-              className={`px-4 lg:px-8 py-2 text-sm lg:text-base rounded-full border transition-all duration-300 hover:scale-105 hover:shadow-lg transform ${isScrolled ? 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border-white text-white hover:bg-white hover:text-gray-800'}`}
+              className={`whitespace-nowrap px-4 xl:px-7 py-2 text-sm xl:text-base rounded-full border transition-all duration-300 hover:scale-105 hover:shadow-lg transform ${isScrolled ? 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border-white text-white hover:bg-white hover:text-gray-800'}`}
             >
               {tx('navbar.bookNow', 'BOOK NOW')}
             </a>
           </div>
 
-          {/* Mobile: Book Now moved to top bar */}
+          {/* Mobile + tablet: Book Now moved to top bar (below lg) */}
           <a
             href="/book-now"
             target="_blank"
             rel="noreferrer"
-            className={`md:hidden px-3 py-1.5 text-xs font-semibold rounded-full border transition-all duration-300 ${isScrolled ? 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border-white text-white hover:bg-white hover:text-gray-800'}`}
+            className={`lg:hidden whitespace-nowrap px-3 py-1.5 text-xs font-semibold rounded-full border transition-all duration-300 ${isScrolled ? 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border-white text-white hover:bg-white hover:text-gray-800'}`}
           >
             {tx('navbar.bookNow', 'BOOK NOW')}
           </a>
@@ -322,7 +323,7 @@ const Navbar = () => {
       {isDestinationOpen && (
         <div
           ref={destPanelRef}
-          className={`hidden md:block fixed left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-xl border-t border-gray-200' : 'bg-white/10 backdrop-blur-xl border-t border-white/20'}`}
+          className={`hidden lg:block fixed left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-xl border-t border-gray-200' : 'bg-white/10 backdrop-blur-xl border-t border-white/20'}`}
           style={{ top: `${navHeight}px` }}
         >
           <div className="h-1 w-full pointer-events-none" />
@@ -474,7 +475,7 @@ const Navbar = () => {
       )}
 
       {/* ===== MOBILE MENU ===== */}
-      <div className={`md:hidden transition-all duration-500 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`lg:hidden transition-all duration-500 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className={`w-72 mx-auto rounded-3xl mt-0 transform transition-all duration-500 ease-in-out ${isScrolled ? 'bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl' : 'bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl'}`}>
           <div className="px-4 py-6 max-h-[75vh] overflow-y-auto">
             <ul className="flex flex-col gap-2 text-center">
