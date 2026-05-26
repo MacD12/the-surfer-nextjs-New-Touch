@@ -1,67 +1,23 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Waves, MapPin, Heart, Info } from 'lucide-react';
+import { ArrowRight, Info } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n-compat';
 import { useLocale } from 'next-intl';
 
 /**
  * Source paragraphs (from i18n) come in this order:
- *   [0] intro line
- *   [1] "Beach Camp: ..." description
- *   [2] "TS2 Camp: ..." description
- *   [3] "Soul Surfer: ..." description (independent camp)
+ *   [0] intro line (may hold multiple paragraphs separated by blank lines)
+ *   [1] "Beach Camp: ..." description  (kept in i18n for SEO + reuse, not rendered here)
+ *   [2] "TS2 Camp: ..." description    (kept in i18n for SEO + reuse, not rendered here)
+ *   [3] "Soul Surfer: ..." description (kept in i18n for SEO + reuse, not rendered here)
  *   [4] shared note — where Beach Camp + TS2 activities happen
  *   [5] shared note — transport compensation between Beach Camp + TS2
  *
- * We strip the "<Camp name>: " prefix so the camp name becomes the card title
- * and the rest becomes the card body — works for both EN and DE because both
- * locales use the same colon-prefix structure.
+ * The per-camp mini-cards used to render paragraphs[1..3] but were removed
+ * because the large slider cards above the section already cover that ground.
+ * Items 1-3 stay in i18n untouched so other pages / search engines can use them.
  */
-function splitTitleAndBody(text: string): { title: string; body: string } {
-  const match = text.match(/^([^:]+):\s*(.+)$/s);
-  if (match) {
-    return { title: match[1].trim(), body: match[2].trim() };
-  }
-  return { title: '', body: text };
-}
-
-type CampCardProps = {
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
-  title: string;
-  body: string;
-  index: number;
-};
-
-const CampCard = ({ icon: Icon, title, body, index }: CampCardProps) => (
-  <motion.div
-    className="group relative h-full flex flex-col bg-white rounded-2xl shadow-md ring-1 ring-black/5 p-6 sm:p-7 overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-2xl hover:ring-[#0a67b3]/25"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.55, delay: index * 0.1, ease: 'easeOut' }}
-    viewport={{ once: true, amount: 0.3 }}
-  >
-    {/* Left-edge brand accent bar */}
-    <span
-      aria-hidden="true"
-      className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0a67b3] via-cyan-400 to-[#0a67b3]"
-    />
-
-    <div className="flex items-center gap-3 mb-4">
-      <div className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-[#0a67b3] to-[#0891b2] shadow-md shadow-[#0a67b3]/25 group-hover:scale-110 transition-transform duration-300 ease-out">
-        <Icon className="w-5 h-5 text-white" strokeWidth={1.75} />
-      </div>
-      <h3 className="text-lg md:text-xl font-bold text-gray-800 leading-tight">
-        {title}
-      </h3>
-    </div>
-
-    <p className="text-sm md:text-[15px] text-gray-600 leading-[1.75]">
-      {body}
-    </p>
-  </motion.div>
-);
-
 const Difference = () => {
   const { t } = useTranslation();
   const locale = useLocale();
@@ -82,9 +38,6 @@ const Difference = () => {
     .split('\n')
     .map((s) => s.trim())
     .filter(Boolean);
-  const beach = splitTitleAndBody(paragraphs[1] || '');
-  const ts2 = splitTitleAndBody(paragraphs[2] || '');
-  const soulSurfer = splitTitleAndBody(paragraphs[3] || '');
   const sharedNotes = paragraphs.slice(4).filter(Boolean);
 
   return (
@@ -130,15 +83,6 @@ const Difference = () => {
           </div>
         )}
       </motion.div>
-
-      {/* Comparison cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto mb-8">
-        <CampCard icon={Waves} title={beach.title} body={beach.body} index={0} />
-        <CampCard icon={MapPin} title={ts2.title} body={ts2.body} index={1} />
-        {soulSurfer.body && (
-          <CampCard icon={Heart} title={soulSurfer.title} body={soulSurfer.body} index={2} />
-        )}
-      </div>
 
       {/* Shared notes panel */}
       {sharedNotes.length > 0 && (

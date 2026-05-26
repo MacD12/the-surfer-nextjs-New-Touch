@@ -48,31 +48,31 @@ const RatesQuickNav = () => {
     flag, country, camps, delay = 0,
   }: { flag: string; country: string; camps: { name: string; href: string }[]; delay?: number }) => (
     <motion.div
-      className="rounded-2xl bg-gradient-to-br from-cyan-50/50 via-white to-white ring-1 ring-cyan-100/70 shadow-md p-5 sm:p-6 md:p-7"
+      className="h-full flex flex-col rounded-2xl bg-gradient-to-br from-cyan-50/50 via-white to-white ring-1 ring-cyan-100/70 shadow-md p-5 sm:p-6 md:p-7 text-center"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="flex items-center gap-3 mb-4 sm:mb-5">
+      <div className="flex flex-col items-center gap-2 mb-4 sm:mb-5">
         <span
           aria-hidden="true"
-          className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white ring-1 ring-cyan-200/60 shadow-sm text-xl sm:text-2xl leading-none"
+          className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white ring-1 ring-cyan-200/60 shadow-sm text-xl sm:text-2xl leading-none"
         >
           {flag}
         </span>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] uppercase text-cyan-700">
             {country}
           </span>
-          <span className="text-xs text-gray-500 font-medium">
+          <span className="text-xs text-gray-500 font-medium mt-0.5">
             {camps.length === 1
               ? (t('ratesNav.campsLabel_one', { count: camps.length }) || `${camps.length} camp`)
               : (t('ratesNav.campsLabel_other', { count: camps.length }) || `${camps.length} camps`)}
           </span>
         </div>
       </div>
-      <div className="flex flex-wrap gap-2 sm:gap-2.5">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 mt-auto">
         {camps.map((c, i) => (
           <Pill key={c.href} href={c.href} name={c.name} delay={delay + 0.1 + i * 0.05} />
         ))}
@@ -81,7 +81,7 @@ const RatesQuickNav = () => {
   );
 
   return (
-    <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-2">
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-2">
       <motion.div
         className="text-center mb-7 sm:mb-9"
         initial={{ opacity: 0, y: 16 }}
@@ -103,7 +103,7 @@ const RatesQuickNav = () => {
         </p>
       </motion.div>
 
-      <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-2 items-stretch">
         <CountryCard flag="🇱🇰" country={t('ratesNav.countries.sriLanka')} camps={sriLankaCamps} delay={0} />
         <CountryCard flag="🇲🇦" country={t('ratesNav.countries.morocco')}  camps={moroccoCamps}  delay={0.1} />
       </div>

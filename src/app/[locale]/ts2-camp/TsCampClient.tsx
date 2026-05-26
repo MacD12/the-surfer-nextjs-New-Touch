@@ -128,7 +128,7 @@ export default function TsCampClient() {
 
             <CampLocationCard
               campName="The Surfer TS2 Camp"
-              streetAddress="No 176/12, 3rd Lane, Main Street"
+              streetAddress="No 176/12, 3rd Lane, Paranakade"
               locality="Weligama"
               postalCode="81700"
               country="Sri Lanka"

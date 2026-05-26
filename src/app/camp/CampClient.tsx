@@ -64,34 +64,33 @@ const PACKAGE_DATA: CampPkg[] = [
   {
     id: '1',
     title: 'The Surfer Beach Camp',
-    short: 'Weligama · Flagship',
+    short: 'Weligama · Beachfront',
     images: [
       'booking_engine/beach1.jpg',
       'booking_engine/beach2.jpg',
       'booking_engine/beach3.jpg',
     ],
     includes: [
-      'THE SURFER BEACH – Main Surf Camp in Weligama, Sri Lanka',
-      "Our flagship surf camp is located right next to Weligama's top surfing beach and within walking distance of multiple surf breaks, perfect for all skill levels.",
-      'Designed and run by surfers for surfers, the camp focuses on rapid progress using proven surfing techniques.',
-      'It offers the full surf and yoga experience in a premium setting.',
-      'On-site facilities include a dedicated yoga area, a swimming pool, and a restaurant—everything you need for an unforgettable surf getaway in Sri Lanka.',
+      'THE SURFER BEACH CAMP – Beachfront in Weligama, Sri Lanka',
+      'Oceanfront location with a swimming pool. Standard private rooms and Mixed dormitory with air conditioning and en-suite hot-water bathrooms.',
+      'On-site facilities include a dedicated yoga area, a swimming pool, and a restaurant — everything you need for the full original The Surfer surf and yoga experience.',
+      'Right next to Weligama Bay with multiple surf breaks within walking distance, perfect for all skill levels.',
     ],
   },
   {
     id: '2',
     title: 'TS2 Surf Camp',
-    short: 'Weligama · Relaxed',
+    short: 'Weligama · Budget',
     images: [
       'booking_engine/ts2-1.jpg',
       'booking_engine/ts2-2.jpg',
       'booking_engine/ts2-3.jpg',
     ],
     includes: [
-      'TS2 WELIGAMA – Surf Camp in a Tranquil Setting',
-      'TS2 Weligama is a serene surf camp just 100 meters from the beach, nestled in a lush green area and only 5 minutes from The Surfer Beach Camp.',
-      'Guests at TS2 enjoy full access to all main camp amenities, including the restaurant, pool, daily surf and yoga lessons, and social events.',
-      "It's the perfect extension of our surf camp family for a memorable Sri Lankan surf and yoga experience.",
+      'THE SURFER TS2 CAMP – Budget Surf Stay in Weligama',
+      'Simple, basic-standard private rooms with air conditioning and hot water ensuite bathrooms.',
+      'The camp is located just a 5-minute ride from the Beach Camp. Even when you book TS2 Weligama, all surf lessons, yoga sessions, breakfast, dinner, and events take place at the Beach Camp — so you still get the full original The Surfer camp experience.',
+      'To make travel between the two camps easy, we provide LKR 1,000 per day per bed or per room as travel compensation.',
     ],
   },
   {
@@ -100,17 +99,17 @@ const PACKAGE_DATA: CampPkg[] = [
     short: 'Tamraght · Atlantic',
     images: ['/morocco/moro-1.jpg', '/morocco/moro-2.jpg', '/morocco/moro-3.jpg'],
     includes: [
-      'THE SURFER SURFSTYLE – Surf Camp in Taghazout, Morocco',
-      "Our SurfStyle camp is located in the heart of Taghazout, Morocco's premier surf destination, known for its consistent waves and vibrant surf culture.",
-      'The camp offers a unique blend of traditional Moroccan hospitality and modern amenities, providing guests with an authentic yet comfortable experience.',
-      'With direct access to some of the best surf spots in the area, including Anchor Point and Killer Point, surfers of all levels can enjoy world-class waves.',
-      'On-site facilities include a rooftop terrace with ocean views, a communal lounge area, and a restaurant serving delicious local cuisine.',
+      'THE SURFER SURFSTYLE CAMP – Tamraght, Morocco',
+      "Our partner camp in the heart of Tamraght, Morocco's premier surf destination, known for its consistent waves and vibrant surf culture.",
+      'A unique blend of traditional Moroccan hospitality and modern amenities — authentic yet comfortable.',
+      'Direct access to Anchor Point, Killer Point and other world-class breaks for surfers of all levels.',
+      'On-site: rooftop terrace with ocean views, communal lounge, and a restaurant serving delicious local cuisine.',
     ],
   },
   {
     id: '4',
     title: 'Soul Surfer Camp',
-    short: 'Weligama · Independent',
+    short: 'Weligama · Independent retreat',
     images: [
       'soul_camp/2.jpg',
       'booking_engine/soulcamp2.jpg',
@@ -119,10 +118,11 @@ const PACKAGE_DATA: CampPkg[] = [
       'booking_engine/soulcamp5.jpg',
     ],
     includes: [
-      'SOUL SURFER – Yoga Retreat in Sri Lanka',
-      'Experience the perfect blend of surf and yoga at our Soul Surfer Camp, nestled in the heart of Sri Lanka.',
-      'Our retreat offers a unique opportunity to connect with nature, improve your yoga practice, and enhance your surfing skills.',
-      "With daily yoga sessions, surf lessons, and wellness activities, you'll find the perfect balance for a transformative experience.",
+      'SOUL SURFER CAMP – Independent Boutique Retreat in Weligama',
+      'An independent retreat with its own dedicated location in Weligama — just a 20-second walk from the beach and 5 minutes walk to the city center.',
+      'Boutique-style experience with upscale private rooms and mixed dormitory rooms, all with ensuite bathrooms.',
+      'Guests enjoy a rooftop restaurant and a rooftop infinity pool with panoramic sea views.',
+      'Own daily schedule of surf sessions and activities, running entirely independently while still carrying the original The Surfer camp vibe.',
     ],
   },
 ];
@@ -533,7 +533,7 @@ const Camp = () => {
                   </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
                   <CompareCard
                     icon={Waves}
                     title="Beach Camp"
@@ -543,6 +543,7 @@ const Camp = () => {
                       { label: 'Rooms:', value: 'Private rooms with A/C, ensuite, hot water.' },
                       { label: 'Facilities:', value: 'Pool, restaurant, dedicated yoga area.' },
                       { label: 'Sessions:', value: 'All lessons, yoga, dinners, events happen here.' },
+                      { label: 'Events:', value: 'The Surfer signature events such as boat parties, pool parties, and special social nights bring guests from all camps together to share the full community experience.' },
                       { label: 'Best for:', value: 'Guests who want to stay where it all happens.' },
                     ]}
                     index={0}
@@ -557,6 +558,7 @@ const Camp = () => {
                       { label: 'Facilities:', value: 'Use Beach Camp amenities during the day.' },
                       { label: 'Sessions:', value: 'All sessions run at Beach Camp.' },
                       { label: 'Transport:', value: 'LKR 1,000/day compensation between camps.' },
+                      { label: 'Events:', value: 'The Surfer signature events such as boat parties, pool parties, and special social nights bring guests from all camps together to share the full community experience.' },
                       { label: 'Best for:', value: 'Sleep cheap at TS2, hang out at Beach Camp.' },
                     ]}
                     index={1}
@@ -570,33 +572,12 @@ const Camp = () => {
                       { label: 'Rooms:', value: 'Brand new private rooms with A/C, ensuite & hot water.' },
                       { label: 'Facilities:', value: 'Rooftop infinity pool with sea view, rooftop restaurant & rooftop yoga area.' },
                       { label: 'Operation:', value: 'Runs independently — own schedule & sessions.' },
+                      { label: 'Events:', value: 'The Surfer signature events such as boat parties, pool parties, and special social nights bring guests from all camps together to share the full community experience.' },
                       { label: 'Best for:', value: 'Surfers who want focus, sea views, and their own pace.' },
                     ]}
                     index={2}
                   />
                 </div>
-
-                {/* Shared-events note */}
-                <motion.div
-                  className="mt-6 max-w-4xl mx-auto rounded-2xl bg-gradient-to-br from-cyan-50/60 via-white to-white ring-1 ring-cyan-100/70 shadow-sm px-5 py-4 sm:px-6 sm:py-5"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
-                  viewport={{ once: true, amount: 0.4 }}
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-cyan-100">
-                      <Info className="w-4 h-4 text-cyan-700" strokeWidth={2.25} />
-                    </div>
-                    <p className="text-xs sm:text-sm leading-relaxed text-gray-700">
-                      <strong className="font-bold text-gray-900">
-                        Events are shared across all camps.
-                      </strong>{' '}
-                      No matter which camp you choose, all surf events, dinners, and social
-                      gatherings bring together guests from Beach Camp, TS2, and Soul Surfer.
-                    </p>
-                  </div>
-                </motion.div>
               </section>
 
               {/* Map */}

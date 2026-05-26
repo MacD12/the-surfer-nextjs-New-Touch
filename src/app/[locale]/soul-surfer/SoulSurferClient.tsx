@@ -7,6 +7,7 @@ import LifeAtSoulSurfer from '@/components/soul_surfer/Life';
 import ImageCard from '@/components/soul_surfer/ImageCard';
 import Package from '@/components/soul_surfer/Package';
 import ComfortableStaysSoul from '@/components/soul_surfer/ComfortableStays';
+import AboutSoulSurfer from '@/components/soul_surfer/AboutSoulSurfer';
 import CampLocationCard from '@/components/CampLocationCard';
 import CampFaq from '@/components/CampFaq';
 import { Footer } from '@/components/Footer';
@@ -39,6 +40,8 @@ export default function SoulSurferClient() {
       <ImageCard />
       <Package />
       <ComfortableStaysSoul />
+
+      <AboutSoulSurfer />
 
       {/* LOCATION */}
       <section
@@ -128,7 +131,7 @@ export default function SoulSurferClient() {
 
             <CampLocationCard
               campName="Soul Surfer Camp"
-              streetAddress="3rd Lane, Main Street"
+              streetAddress="No 140/13, 3rd Lane, Paranakade"
               locality="Weligama"
               postalCode="81700"
               country="Sri Lanka"

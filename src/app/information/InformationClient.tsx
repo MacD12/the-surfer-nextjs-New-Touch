@@ -535,27 +535,56 @@ const Information = () => {
                   </div>
                 </FormCard>
 
-                {/* Your Selections (read-only) */}
+                {/* Your Selections (read-only) — shows ALL packages + ALL rooms
+                    selected in earlier steps, not just the first traveller's. */}
                 <FormCard icon={PackageIcon} eyebrow="Step 03" title="Your Selections">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <InputField
-                      icon={PackageIcon}
-                      label="Surf Package"
-                      type="text"
-                      name="package"
-                      value={traveller.package || ''}
-                      readOnly
-                      placeholder="Auto-filled"
-                    />
-                    <InputField
-                      icon={BedDouble}
-                      label="Room"
-                      type="text"
-                      name="room"
-                      value={traveller.room || ''}
-                      readOnly
-                      placeholder="Auto-filled"
-                    />
+                    <div>
+                      <label className="block text-[11px] font-bold tracking-[0.18em] uppercase text-cyan-700 mb-1.5">
+                        Surf Packages
+                      </label>
+                      <ul className="space-y-1.5 rounded-xl bg-cyan-50/40 ring-1 ring-cyan-100 px-3 py-2.5">
+                        {selectedPackages.length > 0 ? (
+                          selectedPackages.map((pkg, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-2 text-sm text-gray-800"
+                            >
+                              <PackageIcon
+                                className="w-4 h-4 mt-0.5 text-cyan-600 shrink-0"
+                                strokeWidth={2}
+                              />
+                              <span>{pkg}</span>
+                            </li>
+                          ))
+                        ) : (
+                          <li className="text-sm text-gray-400">Auto-filled</li>
+                        )}
+                      </ul>
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold tracking-[0.18em] uppercase text-cyan-700 mb-1.5">
+                        Rooms
+                      </label>
+                      <ul className="space-y-1.5 rounded-xl bg-cyan-50/40 ring-1 ring-cyan-100 px-3 py-2.5">
+                        {selectedRooms.length > 0 ? (
+                          selectedRooms.map((room, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-2 text-sm text-gray-800"
+                            >
+                              <BedDouble
+                                className="w-4 h-4 mt-0.5 text-cyan-600 shrink-0"
+                                strokeWidth={2}
+                              />
+                              <span>{room}</span>
+                            </li>
+                          ))
+                        ) : (
+                          <li className="text-sm text-gray-400">Auto-filled</li>
+                        )}
+                      </ul>
+                    </div>
                   </div>
                   <p className="mt-3 text-[11px] text-gray-500 flex items-center gap-1.5">
                     <Info className="w-3 h-3 text-cyan-500" strokeWidth={2.5} />

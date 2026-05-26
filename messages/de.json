@@ -332,7 +332,7 @@
       },
       {
         "images": ["/morocco/moro-1.jpg", "/morocco/moro-2.jpg", "/morocco/moro-3.jpg", "/morocco/morocco6.jpg"],
-        "topic": "The Surfer Surf Style – Marokko",
+        "topic": "The Surfer Surfstyle Surf Camp",
         "body1": "Bringe deine Skills auf das nächste Level mit unserem Advanced-Surf-Trainingscamp – für alle, die Technik und Form ernsthaft verbessern möchten.",
         "link": "/style-camp"
       }
@@ -368,9 +368,19 @@
       }
     ]
   },
+  "aboutSoulSurfer": {
+    "eyebrow": "Lerne uns kennen",
+    "heading": "Was ist Soul Surfer Camp?",
+    "paragraphs": [
+      "Soul Surfer Camp ist ein unabhängiges Boutique-Surf-Retreat in Weligama — nur 20 Sekunden Fußweg vom Strand entfernt und 5 bis 10 Minuten zu Fuß ins Stadtzentrum.",
+      "Designed für Komfort, Stil und entspanntes Insel-Lebensgefühl bietet das Camp hochwertige Privatzimmer, Zweibettzimmer und gemischte Schlafsaalzimmer — alle mit eigenem Bad.",
+      "Das Camp hat seinen eigenen Standort, einen eigenen täglichen Plan an Surf-Sessions und Aktivitäten und läuft komplett eigenständig — und trägt dabei immer noch die Original The Surfer Camp-Atmosphäre.",
+      "Zwischen den Surf-Sessions entspannst du im Dachterrassen-Restaurant mit Meerblick oder am Rooftop-Infinity-Pool mit Blick aufs Meer. Soul Surfer Camp ist die perfekte Wahl für Reisende, die ein boutique-artiges, komfortables Surfcamp-Erlebnis in Weligama suchen — mit toller Atmosphäre, schönen Ausblicken und direkter Nähe zu Strand und Stadt."
+    ]
+  },
   "comfortableStaysSoul": {
     "title": "Zimmer im Soul Surfer Camp",
-    "intro": "Jedes Zimmer im Soul Surfer Camp ist auf Komfort und entspanntes Insel-Leben ausgelegt — ob im Schlafsaal, im privaten Rückzugsort oder im Zweibettzimmer mit deinem Reisepartner. Erhole dich gut zwischen den Sessions.",
+    "intro": "Jedes Zimmer im Soul Surfer Camp ist mit Boutique-Komfort und entspanntem Insel-Lebensgefühl gestaltet — ob du dir einen Schlafsaal teilst, einen privaten Rückzugsort genießt oder mit einem Reisepartner in einem Zweibettzimmer übernachtest. Erhole dich gut zwischen den Surf-Sessions und genieße das volle Retreat-Erlebnis mit unserem Dachterrassen-Restaurant mit Meerblick und unserem Rooftop-Infinity-Pool mit Panorama-Meerblick.",
     "rooms": [
       {
         "key": "dormitory",
@@ -597,7 +607,7 @@
       {
         "title": "TS2 SURF CAMP",
         "icon": "location",
-        "lines": ["NO 176/12, 3rd Lane,", "Main Street, Weligama", "Sri Lanka. 81700"],
+        "lines": ["No 176/12, 3rd Lane,", "Paranakade, Weligama", "Sri Lanka. 81700"],
         "mapHref": "https://maps.app.goo.gl/r9FZ5MZQE2ki6t2J8"
       },
       {
@@ -984,9 +994,9 @@
     "heading": "Unsere Surf Camps in Sri Lanka",
     "paragraphs": [
       "Drei Camps, ein originaler The Surfer Vibe.\n\nBeach Camp und TS2 teilen sich alle täglichen Aktivitäten, während Soul Surfer als unabhängiges Camp mit eigenem, einzigartigem Setup und eigener Atmosphäre arbeitet.\n\nGleichzeitig bringen The Surfer Signature-Events wie Bootspartys, Poolpartys und besondere Social Nights Gäste aus allen Camps zusammen, um das volle Gemeinschaftserlebnis zu teilen.",
-      "Beach Camp: direkt am Meer mit Pool. Standard-Privatzimmer mit Klimaanlage und eigenem Bad mit Warmwasser.",
-      "TS2 Camp: ca. 5 Minuten Fahrt vom Beach Camp. Schlichte Privatzimmer mit Klimaanlage und eigenem Bad mit Warmwasser.",
-      "Soul Surfer: ein unabhängiges Retreat für engagierte Surfer mit eigenem Standort in Weligama. Infinity-Pool auf dem Dach mit Panorama-Meerblick, Dachrestaurant und eigener Sessions-Plan — komplett eigenständiger Betrieb.",
+      "Beach Camp: direkt am Meer mit Pool. Standard-Privatzimmer und gemischter Schlafsaal mit Klimaanlage und eigenem Bad mit Warmwasser.",
+      "TS2 Camp: schlichte Privatzimmer mit Klimaanlage und eigenem Bad mit Warmwasser. Das Camp liegt nur 5 Minuten Fahrt vom Beach Camp entfernt. Auch wenn du TS2 Weligama buchst, finden alle Surfkurse, Yoga-Sessions, Frühstück, Abendessen und Events im Beach Camp statt — du erlebst also die volle The Surfer Camp-Atmosphäre. Damit der Weg zwischen den beiden Camps leicht ist, erstatten wir 1.000 LKR pro Tag pro Bett oder Zimmer als Transportausgleich.",
+      "Soul Surfer: ein unabhängiges Retreat mit eigenem Standort in Weligama, nur 20 Sekunden Fußweg zum Strand und 5 Minuten zur Stadtmitte. Das Camp bietet ein Boutique-Erlebnis mit hochwertigen Privatzimmern und gemischten Schlafsaalzimmern, alle mit eigenem Bad. Gäste genießen ein Dachterrassen-Restaurant und einen Rooftop-Infinity-Pool mit Panorama-Meerblick. Eigener täglicher Plan an Surfsessions und Aktivitäten, komplett eigenständiger Betrieb — und trotzdem die Original The Surfer Camp-Atmosphäre.",
       "Beach Camp & TS2: alle Surfkurse, Yoga-Sessions, Abendessen und Events finden im Beach Camp statt. Ihr könnt den Tag dort verbringen und im TS2 übernachten.",
       "Beach Camp & TS2: wir erstatten 1.000 LKR pro Zimmer oder Bett im Schlafsaal pro Tag als Transportausgleich zwischen den beiden Camps. Soul Surfer arbeitet unabhängig mit eigenen Aktivitäten und eigenem Ablauf."
     ],

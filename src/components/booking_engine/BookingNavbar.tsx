@@ -137,9 +137,11 @@ const BookingNavbar = () => {
             <span className="hidden sm:inline">EUR</span>
           </button>
 
-          {/* Help CTA */}
+          {/* Help CTA — booking flow lives under non-localised routes (/camp,
+              /date, ...), so we explicitly link to the default-locale contact
+              page. Without the /en prefix this 404s. */}
           <a
-            href="/contact"
+            href="/en/contact"
             target="_blank"
             rel="noreferrer"
             aria-label="Need help? Contact us"

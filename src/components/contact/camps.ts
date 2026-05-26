@@ -28,7 +28,7 @@ export const CAMPS: Camp[] = [
     country: 'sri-lanka',
     name: 'The Surfer TS2 Camp',
     short: 'Quieter rooms · 5-min ride to the Beach Camp',
-    address: 'No 176/12, 3rd Lane, Main Street, Weligama 81700, Sri Lanka',
+    address: 'No 176/12, 3rd Lane, Paranakade, Weligama 81700, Sri Lanka',
     plusCode: 'XCCG+Q6 Weligama',
     position: [5.9719421, 80.4256101],
     directionsUrl:
@@ -39,7 +39,7 @@ export const CAMPS: Camp[] = [
     country: 'sri-lanka',
     name: 'Soul Surfer Camp',
     short: 'Independent retreat · rooftop infinity pool',
-    address: '3rd Lane, Main Street, Weligama 81700, Sri Lanka',
+    address: 'No 140/13, 3rd Lane, Paranakade, Weligama 81700, Sri Lanka',
     plusCode: 'XCCG+M9P Weligama',
     position: [5.971719, 80.425939],
     directionsUrl:
