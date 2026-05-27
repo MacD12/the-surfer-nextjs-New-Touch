@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Info } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n-compat';
 import { useLocale } from 'next-intl';
 
@@ -11,12 +11,13 @@ import { useLocale } from 'next-intl';
  *   [1] "Beach Camp: ..." description  (kept in i18n for SEO + reuse, not rendered here)
  *   [2] "TS2 Camp: ..." description    (kept in i18n for SEO + reuse, not rendered here)
  *   [3] "Soul Surfer: ..." description (kept in i18n for SEO + reuse, not rendered here)
- *   [4] shared note — where Beach Camp + TS2 activities happen
- *   [5] shared note — transport compensation between Beach Camp + TS2
+ *   [4] shared note — where Beach Camp + TS2 activities happen (not rendered here)
+ *   [5] shared note — transport compensation between Beach Camp + TS2 (not rendered here)
  *
- * The per-camp mini-cards used to render paragraphs[1..3] but were removed
- * because the large slider cards above the section already cover that ground.
- * Items 1-3 stay in i18n untouched so other pages / search engines can use them.
+ * The per-camp mini-cards (1..3) and the shared-notes panel (4..5) used to
+ * render here but were removed — the slider cards above and the BOOK NOW
+ * "Compare Camps" section cover that ground without duplicate content.
+ * Items 1-5 stay in i18n untouched so other pages / SEO can still use them.
  */
 const Difference = () => {
   const { t } = useTranslation();
@@ -38,7 +39,6 @@ const Difference = () => {
     .split('\n')
     .map((s) => s.trim())
     .filter(Boolean);
-  const sharedNotes = paragraphs.slice(4).filter(Boolean);
 
   return (
     <section
@@ -83,28 +83,6 @@ const Difference = () => {
           </div>
         )}
       </motion.div>
-
-      {/* Shared notes panel */}
-      {sharedNotes.length > 0 && (
-        <motion.div
-          className="max-w-4xl mx-auto bg-white/70 backdrop-blur-sm rounded-2xl ring-1 ring-[#0a67b3]/10 p-5 sm:p-6 mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.4 }}
-        >
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#0a67b3]/10">
-              <Info className="w-4 h-4 text-[#0a67b3]" strokeWidth={2} />
-            </div>
-            <div className="space-y-2 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
-              {sharedNotes.map((note, i) => (
-                <p key={i}>{note}</p>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-      )}
 
       {/* CTA */}
       <motion.div
