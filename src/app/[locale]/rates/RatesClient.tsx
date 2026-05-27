@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import LK from 'country-flag-icons/react/3x2/LK';
+import MA from 'country-flag-icons/react/3x2/MA';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { useTranslation } from '@/lib/i18n-compat';
@@ -13,31 +15,20 @@ import SurfStylePackage from '@/components/style_camp/Package';
 import ContactMap from '@/components/contact/Map';
 
 /**
- * Inline SVG flags — used instead of unicode flag emoji because Windows/Chrome
- * doesn't render regional indicator emoji (🇱🇰, 🇲🇦) natively and falls back to
- * the bare country code text ("LK", "MA"), which looks like a bug.
+ * Country flag components from the `country-flag-icons` package — gives us
+ * official, accurate SVG flags including the Sri Lanka lion + bo leaves and
+ * the proper Morocco pentagram. Imported as direct tree-shakeable subpath
+ * imports so only LK + MA ship in the bundle (~few KB total).
+ *
+ * Used instead of unicode emoji (🇱🇰, 🇲🇦) because Windows/Chrome falls back
+ * to the bare country-code text ("LK", "MA") since it has no flag-emoji font.
  */
-const SriLankaFlag = ({ className = 'w-7 h-5' }: { className?: string }) => (
-  <svg viewBox="0 0 30 20" className={className} aria-label="Sri Lanka flag" role="img">
-    <rect width="30" height="20" fill="#FFB700" />
-    <rect x="1" y="1" width="7" height="18" fill="#00534E" />
-    <rect x="8" y="1" width="3" height="18" fill="#EB7400" />
-    <rect x="11" y="1" width="18" height="18" fill="#8D153A" />
-    <rect x="12.5" y="2.5" width="15" height="15" fill="none" stroke="#FFB700" strokeWidth="0.7" />
-  </svg>
+const SriLankaFlag = ({ className = 'w-9 h-auto' }: { className?: string }) => (
+  <LK title="Sri Lanka" className={className} />
 );
 
-const MoroccoFlag = ({ className = 'w-7 h-5' }: { className?: string }) => (
-  <svg viewBox="0 0 30 20" className={className} aria-label="Morocco flag" role="img">
-    <rect width="30" height="20" fill="#C1272D" />
-    <path
-      d="M15 6.5 l1.18 3.63 h3.82 l-3.09 2.24 1.18 3.63 -3.09-2.24 -3.09 2.24 1.18-3.63 -3.09-2.24 h3.82 z"
-      fill="none"
-      stroke="#006233"
-      strokeWidth="0.6"
-      strokeLinejoin="round"
-    />
-  </svg>
+const MoroccoFlag = ({ className = 'w-9 h-auto' }: { className?: string }) => (
+  <MA title="Morocco" className={className} />
 );
 
 const RatesQuickNav = () => {
