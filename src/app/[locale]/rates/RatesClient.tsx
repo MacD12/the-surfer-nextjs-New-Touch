@@ -12,6 +12,34 @@ import ComfortableStaysSoul from '@/components/soul_surfer/ComfortableStays';
 import SurfStylePackage from '@/components/style_camp/Package';
 import ContactMap from '@/components/contact/Map';
 
+/**
+ * Inline SVG flags — used instead of unicode flag emoji because Windows/Chrome
+ * doesn't render regional indicator emoji (🇱🇰, 🇲🇦) natively and falls back to
+ * the bare country code text ("LK", "MA"), which looks like a bug.
+ */
+const SriLankaFlag = ({ className = 'w-7 h-5' }: { className?: string }) => (
+  <svg viewBox="0 0 30 20" className={className} aria-label="Sri Lanka flag" role="img">
+    <rect width="30" height="20" fill="#FFB700" />
+    <rect x="1" y="1" width="7" height="18" fill="#00534E" />
+    <rect x="8" y="1" width="3" height="18" fill="#EB7400" />
+    <rect x="11" y="1" width="18" height="18" fill="#8D153A" />
+    <rect x="12.5" y="2.5" width="15" height="15" fill="none" stroke="#FFB700" strokeWidth="0.7" />
+  </svg>
+);
+
+const MoroccoFlag = ({ className = 'w-7 h-5' }: { className?: string }) => (
+  <svg viewBox="0 0 30 20" className={className} aria-label="Morocco flag" role="img">
+    <rect width="30" height="20" fill="#C1272D" />
+    <path
+      d="M15 6.5 l1.18 3.63 h3.82 l-3.09 2.24 1.18 3.63 -3.09-2.24 -3.09 2.24 1.18-3.63 -3.09-2.24 h3.82 z"
+      fill="none"
+      stroke="#006233"
+      strokeWidth="0.6"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const RatesQuickNav = () => {
   const { t } = useTranslation();
 
@@ -45,21 +73,26 @@ const RatesQuickNav = () => {
   );
 
   const CountryCard = ({
-    flag, country, camps, delay = 0,
-  }: { flag: string; country: string; camps: { name: string; href: string }[]; delay?: number }) => (
+    Flag, country, camps, delay = 0,
+  }: {
+    Flag: React.ComponentType<{ className?: string }>;
+    country: string;
+    camps: { name: string; href: string }[];
+    delay?: number;
+  }) => (
     <motion.div
-      className="h-full flex flex-col rounded-2xl bg-gradient-to-br from-cyan-50/50 via-white to-white ring-1 ring-cyan-100/70 shadow-md p-5 sm:p-6 md:p-7 text-center"
+      className="flex flex-col rounded-2xl bg-gradient-to-br from-cyan-50/50 via-white to-white ring-1 ring-cyan-100/70 shadow-md p-5 sm:p-6 md:p-7 text-center"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="flex flex-col items-center gap-2 mb-4 sm:mb-5">
+      <div className="flex flex-col items-center gap-2.5 mb-4 sm:mb-5">
         <span
           aria-hidden="true"
-          className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white ring-1 ring-cyan-200/60 shadow-sm text-xl sm:text-2xl leading-none"
+          className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white ring-1 ring-cyan-200/60 shadow-sm overflow-hidden"
         >
-          {flag}
+          <Flag className="w-8 h-auto sm:w-9 rounded-sm shadow-sm" />
         </span>
         <div className="flex flex-col items-center">
           <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] uppercase text-cyan-700">
@@ -72,7 +105,7 @@ const RatesQuickNav = () => {
           </span>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 mt-auto">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5">
         {camps.map((c, i) => (
           <Pill key={c.href} href={c.href} name={c.name} delay={delay + 0.1 + i * 0.05} />
         ))}
@@ -103,9 +136,9 @@ const RatesQuickNav = () => {
         </p>
       </motion.div>
 
-      <div className="grid gap-4 sm:gap-5 md:grid-cols-2 items-stretch">
-        <CountryCard flag="🇱🇰" country={t('ratesNav.countries.sriLanka')} camps={sriLankaCamps} delay={0} />
-        <CountryCard flag="🇲🇦" country={t('ratesNav.countries.morocco')}  camps={moroccoCamps}  delay={0.1} />
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-2 items-start">
+        <CountryCard Flag={SriLankaFlag} country={t('ratesNav.countries.sriLanka')} camps={sriLankaCamps} delay={0} />
+        <CountryCard Flag={MoroccoFlag}  country={t('ratesNav.countries.morocco')}  camps={moroccoCamps}  delay={0.1} />
       </div>
     </section>
   );
