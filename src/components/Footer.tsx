@@ -6,7 +6,6 @@ import {
   Instagram,
   Mail,
   MapPin,
-  Heart,
   ArrowRight,
 } from 'lucide-react';
 import Whatsapp from './Whatsapp';
@@ -180,12 +179,6 @@ const Footer = () => {
         <div className="mt-14 pt-6 border-t border-white/15 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           <p className="text-xs text-white/65 inline-flex items-center gap-2 flex-wrap">
             <span>© {year} The Surfer.</span>
-            <span className="text-white/30">·</span>
-            <span className="inline-flex items-center gap-1.5">
-              Made with{' '}
-              <Heart className="h-3 w-3 fill-cyan-300 text-cyan-300" />{' '}
-              in Weligama
-            </span>
             <span className="text-white/30">·</span>
             <button
               type="button"
