@@ -12,6 +12,7 @@ import ComfortableStays from '@/components/beach_camp/ComfortableStays';
 import ComfortableStayss from '@/components/ts_camp/ComfortableStayss';
 import ComfortableStaysSoul from '@/components/soul_surfer/ComfortableStays';
 import SurfStylePackage from '@/components/style_camp/Package';
+import ComfortableStaysStyle from '@/components/style_camp/ComfortableStays';
 import ContactMap from '@/components/contact/Map';
 
 /**
@@ -502,6 +503,7 @@ export default function RatesClient() {
       <ComfortableStaysSoul />
 
       <SurfStylePackage />
+      <ComfortableStaysStyle />
 
       <FAQRate />
 
