@@ -69,6 +69,9 @@ const PACKAGE_DATA: CampPkg[] = [
       'booking_engine/beach1.jpg',
       'booking_engine/beach2.jpg',
       'booking_engine/beach3.jpg',
+      'beach_camp/s5.jpg',
+      'beach_camp/s2.jpg',
+      'beach_camp/s1.jpg',
     ],
     includes: [
       'THE SURFER BEACH CAMP – Beachfront in Weligama, Sri Lanka',
@@ -85,6 +88,8 @@ const PACKAGE_DATA: CampPkg[] = [
       'booking_engine/ts2-1.jpg',
       'booking_engine/ts2-2.jpg',
       'booking_engine/ts2-3.jpg',
+      'ts2_camp/doubleroom.jpg',
+      'ts2_camp/room_1.jpg',
     ],
     includes: [
       'THE SURFER TS2 CAMP – Budget Surf Stay in Weligama',
@@ -116,6 +121,8 @@ const PACKAGE_DATA: CampPkg[] = [
       'booking_engine/soulcamp3.jpg',
       'booking_engine/soulcamp4.jpg',
       'booking_engine/soulcamp5.jpg',
+      'soul_camp/13.jpg',
+      'soul_camp/room-4.jpg',
     ],
     includes: [
       'SOUL SURFER CAMP – Independent Boutique Retreat in Weligama',
