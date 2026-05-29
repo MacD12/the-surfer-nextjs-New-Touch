@@ -87,7 +87,6 @@ const PACKAGE_DATA: CampPkg[] = [
     images: [
       'booking_engine/ts2-1.jpg',
       'booking_engine/ts2-2.jpg',
-      'booking_engine/ts2-3.jpg',
       'ts2_camp/doubleroom.jpg',
       'ts2_camp/room_1.jpg',
     ],
@@ -117,12 +116,13 @@ const PACKAGE_DATA: CampPkg[] = [
     short: 'Weligama · Independent retreat',
     images: [
       'soul_camp/3.jpg',
-      'booking_engine/soulcamp2.jpg',
-      'booking_engine/soulcamp3.jpg',
       'booking_engine/soulcamp4.jpg',
-      'booking_engine/soulcamp5.jpg',
+      'soul_camp/7.jpg',
       'soul_camp/13.jpg',
       'soul_camp/room-4.jpg',
+      'soul_camp/6.jpg',
+      'soul_camp/14.jpg',
+      'soul_camp/q13.jpg',
     ],
     includes: [
       'SOUL SURFER CAMP – Independent Boutique Retreat in Weligama',
@@ -230,7 +230,7 @@ const CampCard = ({
               type="button"
               onClick={prev}
               aria-label="Previous image"
-              className="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/95 backdrop-blur-md text-gray-800 shadow-lg ring-1 ring-black/5 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-100"
+              className="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/95 backdrop-blur-md text-gray-800 shadow-lg ring-1 ring-black/5 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100"
             >
               <ChevronLeft className="w-4 h-4" strokeWidth={2.5} />
             </button>
@@ -238,7 +238,7 @@ const CampCard = ({
               type="button"
               onClick={next}
               aria-label="Next image"
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/95 backdrop-blur-md text-gray-800 shadow-lg ring-1 ring-black/5 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-100"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/95 backdrop-blur-md text-gray-800 shadow-lg ring-1 ring-black/5 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100"
             >
               <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
             </button>
