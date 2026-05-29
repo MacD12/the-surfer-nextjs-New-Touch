@@ -73,7 +73,7 @@ const Difference = () => {
                 key={i}
                 className={
                   i === 0
-                    ? 'text-base md:text-lg font-semibold text-gray-800 leading-relaxed'
+                    ? 'text-base md:text-lg font-bold text-gray-800 leading-relaxed uppercase tracking-[0.12em]'
                     : 'text-sm md:text-base text-gray-600 leading-relaxed'
                 }
               >
