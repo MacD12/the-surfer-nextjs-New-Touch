@@ -38,7 +38,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
         >
-          The Surfer SurfStyle Camp
+          The Surfer SurfStyle Surf Camp
         </motion.h1>
 
         {/* Accent bar */}

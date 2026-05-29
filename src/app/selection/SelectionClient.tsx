@@ -34,7 +34,7 @@ const packagePrices: any = {
     'Moderate Surf Lesson Package': { 'Dorm Bed': 55.71, 'Private Single Room': 98.57, 'Private Double Room Per Person': 70.0 },
     'Surf & Yoga Package': { 'Dorm Bed': 64.29, 'Private Single Room': 107.14, 'Private Double Room Per Person': 78.57 },
   },
-  'The Surfer SurfStyle Camp': {
+  'The Surfer SurfStyle Surf Camp': {
     'Full Surf Lesson Package': { 'Shared Room': 83.0, 'Single Room': 108.0, 'Double Room': 85.0 },
     'Moderate Surf Lesson Package': { 'Shared Room': 80.0, 'Single Room': 100.0, 'Double Room': 83.0 },
     'Surf & Yoga Package': { 'Shared Room': 99.0, 'Single Room': 115.0, 'Double Room': 100.0 },
@@ -57,7 +57,7 @@ const weeklyPrices: any = {
     'Moderate Surf Lesson Package': { 'Dorm Bed': 390, 'Private Single Room': 690, 'Private Double Room Per Person': 490 },
     'Surf & Yoga Package': { 'Dorm Bed': 450, 'Private Single Room': 750, 'Private Double Room Per Person': 550 },
   },
-  'The Surfer SurfStyle Camp': {
+  'The Surfer SurfStyle Surf Camp': {
     'Full Surf Lesson Package': { 'Shared Room': 510.0, 'Single Room': 750.0, 'Double Room': 510.0 },
     'Moderate Surf Lesson Package': { 'Shared Room': 480.0, 'Single Room': 700.0, 'Double Room': 490.0 },
     'Surf & Yoga Package': { 'Shared Room': 598.0, 'Single Room': 800.0, 'Double Room': 600.0 },

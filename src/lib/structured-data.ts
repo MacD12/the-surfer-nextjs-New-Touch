@@ -107,7 +107,7 @@ export const CAMPS_DATA: CampData[] = [
   {
     id: 'style',
     slug: '/style-camp',
-    name: 'The Surfer SurfStyle Morocco',
+    name: 'The Surfer SurfStyle Surf Camp',
     shortDescription:
       'Partner surf camp in Tamraght, Morocco — consistent Atlantic waves, expert-led surf sessions, optional yoga and laid-back Moroccan hospitality.',
     longDescription:

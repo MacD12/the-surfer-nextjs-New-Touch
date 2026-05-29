@@ -42,7 +42,7 @@ const RoomPage = () => {
       ];
     }
 
-    if (selectedCamp === 'The Surfer SurfStyle Camp') {
+    if (selectedCamp === 'The Surfer SurfStyle Surf Camp') {
       return [
         { id: 1, title: 'Shared Room', people: 1, image: 'morocco/3-bed-1.jpg', details: 'Shared room for 2 people with bathroom access.' },
         { id: 2, title: 'Single Room', people: 1, image: 'morocco/2-bed-1.jpg', details: 'Private single room with bathroom.' },

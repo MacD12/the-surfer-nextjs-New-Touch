@@ -95,7 +95,7 @@ const PACKAGE_DATA: CampPkg[] = [
   },
   {
     id: '3',
-    title: 'The Surfer SurfStyle Camp',
+    title: 'The Surfer SurfStyle Surf Camp',
     short: 'Tamraght · Atlantic',
     images: ['/morocco/moro-1.jpg', '/morocco/moro-2.jpg', '/morocco/moro-3.jpg'],
     includes: [

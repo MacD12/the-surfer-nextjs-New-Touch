@@ -48,7 +48,7 @@ export const CAMPS: Camp[] = [
   {
     id: 'surfstyle',
     country: 'morocco',
-    name: 'The Surfer SurfStyle Camp',
+    name: 'The Surfer SurfStyle Surf Camp',
     short: 'Atlantic point breaks · Tamraght cliffs',
     address: 'Tamraght, Agadir, Morocco',
     plusCode: 'G889+J8 Agadir',

@@ -6,7 +6,7 @@ import { Camera } from 'lucide-react';
 
 const GALLERY = [
   { src: '/morocco/moro-1.jpg', tag: 'Surf Lesson', alt: 'Pre-surf brief on Tamraght beach' },
-  { src: '/morocco/moro-2.jpg', tag: 'Camp Life', alt: 'Common area at SurfStyle Camp' },
+  { src: '/morocco/moro-2.jpg', tag: 'Camp Life', alt: 'Common area at The Surfer SurfStyle Surf Camp' },
   { src: '/morocco/moro-3.jpg', tag: 'Beach Vibe', alt: 'Watching the breaks from the cliffs' },
 ];
 

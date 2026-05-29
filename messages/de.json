@@ -1126,7 +1126,7 @@
       "ts2Camp": "The Surfer TS2 Camp",
       "soulSurfer": "Soul Surfer Camp",
       "waveCampComing": "Bald verfügbar: The Wave Surf Camp",
-      "styleCamp": "The Surfer SurfStyle"
+      "styleCamp": "The Surfer SurfStyle Surf Camp"
     }
   },
 
@@ -1358,7 +1358,7 @@
   },
   "surfStyle": {
     "hero": {
-      "title": "The Surfer SurfStyle Camp – Marokko",
+      "title": "The Surfer SurfStyle Surf Camp – Marokko",
       "description": "In einer ruhigen Gegend, nur wenige Gehminuten vom Strand entfernt, verbindet dieses Camp traditionellen marokkanischen Charme mit Surf, Yoga und Komfort. Freu dich auf Rooftop-Ausblicke, landestypische Mahlzeiten und entspannte Surf-Vibes.",
       "slider": {
         "alts": [
@@ -1499,7 +1499,7 @@
   },
   
   "lifeAtSurfStyle": {
-    "title": "Leben im The Surfer SurfStyle Camp",
+    "title": "Leben im The Surfer SurfStyle Surf Camp",
     "body": {
       "p1": "Hoch über den sonnenverwöhnten Küsten von Tamraght verbindet das The Surfer Style Camp erstklassige Wellen, entspanntes Küstenleben und einen lebendigen Gemeinschaftsgeist zu einer unvergesslichen marokkanischen Auszeit. Mit jahrelanger Surfhospitality und unzähligen glücklichen Gästen aus aller Welt ist unser Camp nicht nur eine Unterkunft – es ist dein Zuhause am Meer.",
       "p2": "Jeder Tag folgt dem Rhythmus der Gezeiten. Beginne den Morgen mit Meeresduft und dem Ruf der Wellen und brich anschließend zu Surfsessions auf, geführt von erfahrenen lokalen und internationalen Coaches. Zwischen den Sessions dehnst du dich beim Yoga, genießt die Sonne auf unserer Dachterrasse oder erkundest Tamraghts Küstenwege und lebhafte Märkte. Abends erwacht das Leben mit Sonnenuntergängen auf dem Rooftop, gemeinsamen Mahlzeiten, Musik und dem Lachen neuer Freundschaften.",
@@ -1535,7 +1535,7 @@
     "notIncluded": "nicht enthalten"
   },
   "moroccoPackage1": {
-    "title": "The Surfer SurfStyle Camp - Surfpakete & Wochenpreise",
+    "title": "The Surfer SurfStyle Surf Camp - Surfpakete & Wochenpreise",
     "subtitle": "FOLGENDES IST IN UNSEREN SURF-PAKETEN ENTHALTEN",
     "columns": {
       "yogaSurf": "Yoga & Surfen in Tamraght",

@@ -35,7 +35,7 @@ const SurfStyle = () => {
       slides={slides}
       ariaPrev={t('common.prev', 'Previous slide')}
       ariaNext={t('common.next', 'Next slide')}
-      altFallback="SurfStyle Camp Morocco image"
+      altFallback="The Surfer SurfStyle Surf Camp Morocco image"
     />
   );
 };

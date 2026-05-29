@@ -24,7 +24,7 @@ const CampsMap = dynamic(() => import('@/components/srilanka/CampsMap'), {
 const MOROCCO_CAMPS = [
   {
     id: 'surfstyle',
-    name: 'The Surfer SurfStyle Camp',
+    name: 'The Surfer SurfStyle Surf Camp',
     blurb: 'Atlantic point breaks & cliffside Tamraght living',
     plusCode: 'G889+J8 Agadir',
     position: [30.5165125, -9.6817112] as [number, number],

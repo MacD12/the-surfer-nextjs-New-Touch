@@ -23,7 +23,7 @@ const CampsMap = dynamic(() => import('@/components/srilanka/CampsMap'), {
 const SURFSTYLE_CAMP_PIN = [
   {
     id: 'surfstyle',
-    name: 'The Surfer SurfStyle Camp',
+    name: 'The Surfer SurfStyle Surf Camp',
     plusCode: 'G889+J8 Agadir',
     position: [30.5165125, -9.6817112] as [number, number],
     directionsUrl:
@@ -128,7 +128,7 @@ export default function StyleCampClient() {
             </motion.div>
 
             <CampLocationCard
-              campName="The Surfer SurfStyle Camp"
+              campName="The Surfer SurfStyle Surf Camp"
               streetAddress="Tamraght"
               locality="Agadir"
               country="Morocco"

@@ -160,7 +160,7 @@ const Navbar = () => {
     },
     morocco: {
       originals: [],
-      partner: [{ name: tx('navbar.camps.styleCamp', 'The Surfer SurfStyle'), link: '/style-camp' }],
+      partner: [{ name: tx('navbar.camps.styleCamp', 'The Surfer SurfStyle Surf Camp'), link: '/style-camp' }],
     },
   };
 
