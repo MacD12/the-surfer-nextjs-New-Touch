@@ -122,7 +122,6 @@ const PACKAGE_DATA: CampPkg[] = [
       'soul_camp/room-4.jpg',
       'soul_camp/6.jpg',
       'soul_camp/14.jpg',
-      'soul_camp/q13.jpg',
     ],
     includes: [
       'SOUL SURFER CAMP – Independent Boutique Retreat in Weligama',
