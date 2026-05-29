@@ -280,8 +280,7 @@
     "accommodation": [
       { "name": "Mixed Dormitory Bed", "note": "Max ( 05 people )", "surfAndYoga": "450€ / 64.29€", "fullSurf": "490€ / 70.0€", "moderateSurf": "390€ / 55.71€" },
       { "name": "Private Single Room", "note": "Per Week", "surfAndYoga": "750€ / 107.14€", "fullSurf": "790€ / 112.86€", "moderateSurf": "690€ / 98.57€" },
-      { "name": "Private Double / Twin Room", "note": "Per Person / Per Week", "surfAndYoga": "550€ / 78.57€", "fullSurf": "590€ / 84.29€", "moderateSurf": "490€ / 70.0€" },
-      { "name": "Private Triple Room", "note": "Per Person / Per Week", "surfAndYoga": "500€ / 71.43€", "fullSurf": "550€ / 78.57€", "moderateSurf": "450€ / 64.29€" }
+      { "name": "Private Double / Twin Room", "note": "Per Person / Per Week", "surfAndYoga": "550€ / 78.57€", "fullSurf": "590€ / 84.29€", "moderateSurf": "490€ / 70.0€" }
     ]
   },
   "home": {
@@ -400,12 +399,6 @@
         "alt": "Private Double / Twin Room Ensuite at Soul Surfer Camp",
         "title": "Private Double / Twin Room Ensuite",
         "desc": "For solo, couple, or friends who want privacy with style."
-      },
-      {
-        "key": "tripleRoom",
-        "alt": "Private Triple Room Ensuite at Soul Surfer Camp",
-        "title": "Private Triple Room Ensuite",
-        "desc": "Perfect for a group of friends or a small family — shared moments and plenty of space."
       }
     ]
   },

@@ -83,8 +83,9 @@ const ComfortableStaysSoul = () => {
           {t('comfortableStaysSoul.intro')}
         </motion.p>
 
-        {/* Room cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+        {/* Room cards — 3-col grid (dorm + single + double).
+            Triple room was removed because Soul Surfer doesn't offer it. */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-5xl mx-auto">
           {rooms.map((room, idx) => (
             <motion.div
               key={room.key || idx}
@@ -100,7 +101,7 @@ const ComfortableStaysSoul = () => {
                   src={ROOM_IMAGE[room.key]}
                   alt={room.alt}
                   fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 {/* Index */}

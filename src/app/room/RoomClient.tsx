@@ -51,11 +51,11 @@ const RoomPage = () => {
     }
 
     if (selectedCamp === 'Soul Surfer Camp') {
+      // Soul Surfer Camp does NOT offer triple rooms — only dorm, single, and double.
       return [
         { id: 1, title: 'Dorm Bed', people: 1, image: 'soul_camp/6.jpg', details: 'A bed in a mixed dormitory. Shared room, maximum 5 people.' },
         { id: 2, title: 'Private Single Room', people: 1, image: 'soul_camp/room-4.jpg', details: 'Private single room with private bathroom.' },
         { id: 3, title: 'Private Double Room Per Person', people: 2, image: 'soul_camp/13.jpg', details: 'Private double room with private bathroom. Price shown is per person.' },
-        { id: 4, title: 'Private Triple Room Per Person', people: 3, image: 'soul_camp/room-3.jpg', details: 'Private triple room with private bathroom. Price shown is per person.' },
       ];
     }
 
