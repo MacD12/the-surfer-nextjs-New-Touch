@@ -1494,8 +1494,13 @@
   "surfingJourney1": {
     "title": "Unterschied zwischen Beach Camp und TS2 Camp",
     "body": {
-      "l1": "Der Hauptunterschied ist der Standort und der Zimmerstandard!",
-      "l2": "Das Beach Camp liegt direkt am Strand und hat einen Pool. Die TS2-Zimmer sind einfache, zweckmäßige Privatzimmer mit Klimaanlage und eigenem Bad mit Warmwasser. Die Zimmer im Beach Camp sind Standard-Privatzimmer mit Klimaanlage, eigenem Bad und Warmwasser. Das TS2 Camp liegt etwa 5 Minuten Fahrt vom Beach Camp entfernt. Auch wenn du TS2 Weligama buchst, finden all deine Surfstunden, Yoga, Abendessen und Events im Beach Camp statt! Als Transportausgleich werden 1000 Rupien pro Tag und pro Zimmer bzw. Bett gezahlt, um zwischen den Camps zu pendeln. Du kannst den ganzen Tag im Beach Camp verbringen und zum Schlafen einfach ins TS2 zurückkehren!"
+      "paragraphs": [
+        "Der Hauptunterschied liegt im Standort und im Zimmerstandard!",
+        "Das Beach Camp liegt direkt am Strand und verfügt über einen Swimmingpool. Das TS2 Camp bietet einfachere Standard-Privatzimmer mit Klimaanlage und eigenem Bad mit Warmwasser. Die Zimmer im Beach Camp sind Standard-Privatzimmer mit Klimaanlage, eigenem Bad und Warmwasser.",
+        "Das TS2 Camp liegt etwa 5 Minuten Fahrt vom Beach Camp entfernt. Auch wenn du TS2 Weligama buchst, finden alle deine Surfstunden, Yoga-Sessions, Abendessen und Events im Beach Camp statt.",
+        "Als Transportausgleich werden 1.000 Rupien pro Tag und pro Zimmer oder Schlafsaalbett für die Fahrt zwischen den Camps erstattet.",
+        "Du kannst im Grunde den ganzen Tag im Beach Camp verbringen und gehst nur zum Schlafen ins TS2 Camp!"
+      ]
     },
     "bookNow": "Jetzt buchen"
   },

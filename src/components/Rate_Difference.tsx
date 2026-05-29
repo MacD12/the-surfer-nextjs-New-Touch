@@ -5,6 +5,8 @@ import { useTranslation } from '@/lib/i18n-compat'
 
 const SurfingJourney = () => {
   const { t } = useTranslation();
+  const paragraphs =
+    (t('surfingJourney1.body.paragraphs', { returnObjects: true }) as string[]) || [];
 
   return (
     <motion.div
@@ -42,12 +44,13 @@ const SurfingJourney = () => {
         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <p
-          className='text-sm sm:text-base leading-relaxed text-center text-gray-600'
-        >
-          {t('surfingJourney1.body.l1')}<br />
-          {t('surfingJourney1.body.l2')}
-        </p>
+        <div className='space-y-4 text-sm sm:text-base leading-relaxed text-center text-gray-600'>
+          {paragraphs.map((para, i) => (
+            <p key={i} className={i === 0 ? 'font-semibold text-gray-800' : undefined}>
+              {para}
+            </p>
+          ))}
+        </div>
 
         <div className='flex justify-center w-full mt-7'>
           <a

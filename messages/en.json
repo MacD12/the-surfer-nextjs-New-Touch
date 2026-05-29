@@ -1490,8 +1490,13 @@
   "surfingJourney1": {
     "title": "Difference between Beach Camp And TS2 Camp",
     "body": {
-      "l1": "Main difference is the location and the room Standard !",
-      "l2": "Beach camp located right next to the beach With swim pool, TS2 camp rooms are With Basic standard simple private rooms With air conditioning and hot water ensuite bathroom Beach camp rooms are Standard private rooms with air conditioning, ensuite bathroom and hot water ! TS2 camp located 05 minutes ride away from the beach camp, even though you book TS2 weligama , all your surf lessons, Yoga, dinner and all events Will be taken place at the beach camp ! 1000 rupees per day will be paid per room and per dormitory as a transport compensation to travel between the camps! You can basically spend all ur day at the beach camp and just go for sleep at TS2 camp !"
+      "paragraphs": [
+        "The main difference is the location and the room standard!",
+        "The Beach Camp is located right next to the beach and features a swimming pool. TS2 Camp offers more basic standard private rooms with air conditioning and a hot water ensuite bathroom. Beach Camp rooms are standard private rooms with air conditioning, ensuite bathrooms, and hot water.",
+        "TS2 Camp is located around a 5-minute ride away from the Beach Camp. Even if you book TS2 Weligama, all your surf lessons, yoga sessions, dinners, and events will take place at the Beach Camp.",
+        "As transport compensation, 1000 rupees per day will be paid per room or per dormitory bed to travel between the camps.",
+        "You can basically spend your whole day at the Beach Camp and just head to TS2 Camp to sleep!"
+      ]
     },
     "bookNow": "Book Now"
   },
