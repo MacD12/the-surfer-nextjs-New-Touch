@@ -314,7 +314,7 @@
 
     "cards": [
       {
-        "images": ["/beach_camp/11.jpg", "/beach_camp/I3.jpg", "/beach_camp/image_1.jpg", "/beach_camp/act1.jpg"],
+        "images": ["/beach_camp/image_1.jpg", "/beach_camp/11.jpg", "/beach_camp/I3.jpg", "/beach_camp/act1.jpg"],
         "topic": "The Surfer Beach Camp",
         "body1": "Join us at the ultimate destination for surf enthusiasts. Experience the thrill of riding the waves and enjoy the serene beauty of the ocean.",
         "link": "/beach-camp"
@@ -326,7 +326,7 @@
         "link": "/ts2-camp"
       },
       {
-        "images": ["/soul_camp/2.jpg", "/booking_engine/soulcamp2.jpg", "/booking_engine/soulcamp3.jpg", "/booking_engine/soulcamp4.jpg"],
+        "images": ["/soul_camp/3.jpg", "/soul_camp/2.jpg", "/booking_engine/soulcamp2.jpg", "/booking_engine/soulcamp3.jpg", "/booking_engine/soulcamp4.jpg"],
         "topic": "Soul Surfer Camp",
         "body1": "An independent retreat for the dedicated surfer. Own dedicated location in Weligama with a rooftop infinity pool, sea-view rooftop dining, and its own schedule of sessions.",
         "link": "/soul-surfer"
