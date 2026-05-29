@@ -577,10 +577,10 @@ const Camp = () => {
                     title="Soul Surfer"
                     tagline="Weligama · Independent"
                     bullets={[
-                      { label: 'Location:', value: 'Weligama — own dedicated location.' },
+                      { label: 'Location:', value: 'Weligama — own dedicated location. 5–10 minute walk to city center. 100 meters to the beach.' },
                       { label: 'Rooms:', value: 'Brand new private rooms with A/C, ensuite & hot water.' },
                       { label: 'Facilities:', value: 'Rooftop infinity pool with sea view, rooftop restaurant & rooftop yoga area.' },
-                      { label: 'Operation:', value: 'Runs independently — own schedule & sessions.' },
+                      { label: 'Operation:', value: 'Runs independently — own lessons schedule and daily social activities.' },
                       { label: 'Events:', value: 'The Surfer signature events such as boat parties, pool parties, and special social nights bring guests from all camps together to share the full community experience.' },
                       { label: 'Best for:', value: 'Surfers who want focus, sea views, and their own pace.' },
                     ]}
