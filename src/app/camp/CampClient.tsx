@@ -190,10 +190,12 @@ const CampCard = ({
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
 
-        {/* Dark gradient overlay */}
+        {/* Dark gradient overlay — confined to the bottom third where the
+            camp-name text sits. Top two thirds stay clear so the original
+            photo colours come through. */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10 group-hover:from-black/80 transition-colors duration-500"
+          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/85 via-black/30 to-transparent group-hover:from-black/80 transition-colors duration-500"
         />
 
         {/* Image counter pill */}
