@@ -112,7 +112,6 @@ const PACKAGE_DATA: CampPkg[] = [
     short: 'Weligama · Independent retreat',
     images: [
       'soul_camp/3.jpg',
-      'soul_camp/1.jpg',
       'booking_engine/soulcamp2.jpg',
       'booking_engine/soulcamp3.jpg',
       'booking_engine/soulcamp4.jpg',
