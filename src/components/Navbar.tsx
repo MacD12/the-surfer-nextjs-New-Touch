@@ -282,6 +282,7 @@ const Navbar = () => {
           <li><Link href={lp('/rates')}      className={linkCls('/rates')}>     {tx('navbar.rates', 'RATES')}</Link></li>
           <li><Link href={lp('/faq')}        className={linkCls('/faq')}>       {tx('navbar.faq', 'FAQ')}</Link></li>
           <li><Link href={lp('/blogs')}      className={linkCls('/blogs')}>     {tx('navbar.blogs', 'BLOGS')}</Link></li>
+          <li><Link href={lp('/careers')}    className={linkCls('/careers')}>   {tx('navbar.careers', 'CAREERS')}</Link></li>
           <li><Link href={lp('/contact')}    className={linkCls('/contact')}>   {tx('navbar.contact', 'CONTACT')}</Link></li>
         </ul>
 
@@ -618,6 +619,7 @@ const Navbar = () => {
               <li><Link href={lp('/rates')}      className={mobileLinkCls('/rates')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.rates',      'RATES')}</Link></li>
               <li><Link href={lp('/faq')}        className={mobileLinkCls('/faq')}        onClick={() => setIsMenuOpen(false)}>{tx('navbar.faq',        'FAQ')}</Link></li>
               <li><Link href={lp('/blogs')}      className={mobileLinkCls('/blogs')}      onClick={() => setIsMenuOpen(false)}>{tx('navbar.blogs',      'BLOGS')}</Link></li>
+              <li><Link href={lp('/careers')}    className={mobileLinkCls('/careers')}    onClick={() => setIsMenuOpen(false)}>{tx('navbar.careers',    'CAREERS')}</Link></li>
               <li><Link href={lp('/contact')}    className={mobileLinkCls('/contact')}    onClick={() => setIsMenuOpen(false)}>{tx('navbar.contact',    'CONTACT')}</Link></li>
 
               {/* Translation (mobile) */}

@@ -47,6 +47,7 @@
       "rates": "Rates",
       "faq": "FAQ",
       "blogs": "Blogs",
+      "careers": "Careers",
       "contact": "Contact"
     },
     "support": {
@@ -1110,6 +1111,7 @@
     "rates": "RATES",
     "faq": "FAQ",
     "blogs": "BLOGS",
+    "careers": "CAREERS",
     "contact": "CONTACT",
     "bookNow": "BOOK NOW",
     "countriesTitle": "COUNTRIES",
@@ -1807,5 +1809,81 @@
         "answer": "We can provide airport pick up and drop off for your convenience. Let us know your flight details and we will arrange an airport pick up accordingly. The driver will meet you at the airport.\nOur drivers will take you through the highway to reach our place faster avoiding the major traffic jams on the sea road. This journey will take approximately 2 to 3 hours to get to our surf camp in Weligama depending on traffic."
       }
     ]
+  },
+  "careers": {
+    "hero": {
+      "eyebrow": "JOIN THE TEAM",
+      "title": "Careers at The Surfer Sri Lanka",
+      "subtitle": "Work, Surf & Live the Sri Lankan Season With Us",
+      "intro": "Join The Surfer team in Weligama for the 2026/2027 season and become part of one of Sri Lanka's leading surf camp communities.",
+      "seasonLabel": "Season Period",
+      "season": "1st October 2026 – 10th May 2027",
+      "ctaApply": "Apply Now"
+    },
+    "join": {
+      "eyebrow": "The Surfer family",
+      "heading": "Join the original The Surfer vibe",
+      "p1": "The Surfer is more than just a workplace. It's a community built around surfing, travel, yoga, adventure, and unforgettable experiences.",
+      "p2": "Based in Weligama, Sri Lanka, we welcome guests from all over the world and create a unique surf camp atmosphere through surf lessons, yoga sessions, social events, beach life, and shared experiences.",
+      "p3": "We're now looking for passionate people to join our team for the upcoming season."
+    },
+    "positions": {
+      "eyebrow": "Open roles",
+      "heading": "Positions available",
+      "items": [
+        {
+          "key": "surfInstructor",
+          "title": "Surf Instructor",
+          "body": "Help guests progress their surfing in a safe, professional, and fun environment while sharing your passion for the ocean."
+        },
+        {
+          "key": "socialHost",
+          "title": "Social Host",
+          "body": "Create unforgettable guest experiences, organize social activities, and help maintain the friendly atmosphere The Surfer is known for."
+        },
+        {
+          "key": "yogaTeacher",
+          "title": "Yoga Teacher",
+          "body": "Lead inspiring yoga sessions and help guests balance their surf journey with movement, recovery, and wellbeing."
+        },
+        {
+          "key": "contentCreator",
+          "title": "Social Media Content Creator",
+          "body": "Capture the lifestyle, surf action, events, and guest experiences while creating engaging content for our social media platforms."
+        }
+      ]
+    },
+    "apply": {
+      "eyebrow": "Apply now",
+      "heading": "Ready to spend a season in paradise?",
+      "subtitle": "Complete the application form below and tell us a little about yourself.",
+      "form": {
+        "fullName": "Full name",
+        "email": "Email address",
+        "whatsapp": "WhatsApp number",
+        "nationality": "Nationality",
+        "location": "Current location",
+        "position": "Position applying for",
+        "positionPlaceholder": "Choose a role…",
+        "startDate": "Available start date",
+        "endDate": "Available end date",
+        "portfolio": "Instagram / portfolio / website (optional)",
+        "about": "Tell us about yourself",
+        "aboutPlaceholder": "Surf background, work experience, why The Surfer, anything else you'd like us to know…",
+        "cv": "Upload CV",
+        "cvHint": "PDF or DOCX, max 5 MB",
+        "submit": "Submit application",
+        "submitting": "Sending…",
+        "success": "Thanks — your application is on its way. We'll be in touch within 7 days.",
+        "error": "Sorry, something went wrong. Please email careers@thesurferweligama.com instead."
+      }
+    },
+    "footer": {
+      "tagline": "Live by the ocean. Meet people from around the world. Be part of The Surfer family.",
+      "location": "Weligama, Sri Lanka  |  October 2026 – May 2027"
+    },
+    "aria": {
+      "section": "Careers at The Surfer"
+    }
   }
 }

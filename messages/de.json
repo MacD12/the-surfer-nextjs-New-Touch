@@ -47,6 +47,7 @@
       "rates": "Preise",
       "faq": "FAQ",
       "blogs": "Blogs",
+      "careers": "Karriere",
       "contact": "Kontakt"
     },
     "support": {
@@ -1112,6 +1113,7 @@
     "rates": "PREISE",
     "faq": "FAQ",
     "blogs": "BLOGS",
+    "careers": "KARRIERE",
     "contact": "KONTAKT",
     "bookNow": "JETZT BUCHEN",
     "countriesTitle": "LÄNDER",
@@ -1735,6 +1737,82 @@
       "shared": { "alt": "Shared room images", "title": "Shared Room", "body": "…" },
       "single": { "alt": "Single room images", "title": "Single Room", "body": "…" },
       "double": { "alt": "Double room images", "title": "Double Room", "body": "…" }
+    }
+  },
+  "careers": {
+    "hero": {
+      "eyebrow": "WERDE TEIL DES TEAMS",
+      "title": "Karriere bei The Surfer Sri Lanka",
+      "subtitle": "Arbeite, surfe und lebe die Sri-Lanka-Saison mit uns",
+      "intro": "Werde Teil des The Surfer Teams in Weligama für die Saison 2026/2027 und werde Teil einer der führenden Surfcamp-Communities Sri Lankas.",
+      "seasonLabel": "Saison",
+      "season": "1. Oktober 2026 – 10. Mai 2027",
+      "ctaApply": "Jetzt bewerben"
+    },
+    "join": {
+      "eyebrow": "Die The Surfer Familie",
+      "heading": "Tauche ein in den originalen The Surfer Vibe",
+      "p1": "The Surfer ist mehr als nur ein Arbeitsplatz. Es ist eine Community rund um Surfen, Reisen, Yoga, Abenteuer und unvergessliche Erlebnisse.",
+      "p2": "Mit Sitz in Weligama, Sri Lanka, empfangen wir Gäste aus aller Welt und schaffen eine einzigartige Surfcamp-Atmosphäre durch Surfkurse, Yoga-Sessions, Social Events, Strandleben und gemeinsame Erlebnisse.",
+      "p3": "Wir suchen jetzt leidenschaftliche Menschen, die unser Team für die kommende Saison verstärken."
+    },
+    "positions": {
+      "eyebrow": "Offene Stellen",
+      "heading": "Verfügbare Positionen",
+      "items": [
+        {
+          "key": "surfInstructor",
+          "title": "Surflehrer:in",
+          "body": "Hilf unseren Gästen, ihr Surfen in einer sicheren, professionellen und entspannten Umgebung weiterzuentwickeln und teile deine Leidenschaft für den Ozean."
+        },
+        {
+          "key": "socialHost",
+          "title": "Social Host",
+          "body": "Schaffe unvergessliche Gästeerlebnisse, organisiere Social-Aktivitäten und sorge für die freundliche Atmosphäre, für die The Surfer bekannt ist."
+        },
+        {
+          "key": "yogaTeacher",
+          "title": "Yogalehrer:in",
+          "body": "Leite inspirierende Yoga-Sessions und hilf Gästen, ihre Surf-Reise mit Bewegung, Regeneration und Wohlbefinden auszubalancieren."
+        },
+        {
+          "key": "contentCreator",
+          "title": "Social Media Content Creator",
+          "body": "Halte Lifestyle, Surf-Action, Events und Gästeerlebnisse fest und erstelle ansprechende Inhalte für unsere Social-Media-Kanäle."
+        }
+      ]
+    },
+    "apply": {
+      "eyebrow": "Jetzt bewerben",
+      "heading": "Bereit für eine Saison im Paradies?",
+      "subtitle": "Fülle das Bewerbungsformular unten aus und erzähl uns ein bisschen über dich.",
+      "form": {
+        "fullName": "Vollständiger Name",
+        "email": "E-Mail-Adresse",
+        "whatsapp": "WhatsApp-Nummer",
+        "nationality": "Nationalität",
+        "location": "Aktueller Wohnort",
+        "position": "Beworbene Position",
+        "positionPlaceholder": "Position wählen…",
+        "startDate": "Verfügbar ab",
+        "endDate": "Verfügbar bis",
+        "portfolio": "Instagram / Portfolio / Website (optional)",
+        "about": "Erzähl uns von dir",
+        "aboutPlaceholder": "Surf-Hintergrund, Berufserfahrung, warum The Surfer, alles was du uns mitteilen möchtest…",
+        "cv": "Lebenslauf hochladen",
+        "cvHint": "PDF oder DOCX, max. 5 MB",
+        "submit": "Bewerbung absenden",
+        "submitting": "Wird gesendet…",
+        "success": "Danke — deine Bewerbung ist auf dem Weg. Wir melden uns innerhalb von 7 Tagen.",
+        "error": "Entschuldigung, etwas ist schiefgelaufen. Bitte schreib stattdessen an careers@thesurferweligama.com."
+      }
+    },
+    "footer": {
+      "tagline": "Leb am Meer. Triff Menschen aus aller Welt. Werde Teil der The Surfer Familie.",
+      "location": "Weligama, Sri Lanka  |  Oktober 2026 – Mai 2027"
+    },
+    "aria": {
+      "section": "Karriere bei The Surfer"
     }
   }
 }
