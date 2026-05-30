@@ -87,8 +87,9 @@ const PACKAGE_DATA: CampPkg[] = [
     images: [
       'booking_engine/ts2-1.jpg',
       'booking_engine/ts2-2.jpg',
-      'ts2_camp/doubleroom.jpg',
       'ts2_camp/room_1.jpg',
+      'ts2_camp/room_2.jpg',
+      'ts2_camp/bathroom.jpg',
     ],
     includes: [
       'THE SURFER TS2 CAMP – Budget Surf Stay in Weligama',
@@ -119,10 +120,8 @@ const PACKAGE_DATA: CampPkg[] = [
       'booking_engine/soulcamp4.jpg',
       'soul_camp/7.jpg',
       'soul_camp/13.jpg',
-      'soul_camp/room-4.jpg',
       'soul_camp/6.jpg',
-      'soul_camp/14.jpg',
-      'soul_camp/q13.jpg',
+      'soul_camp/11.jpg',
     ],
     includes: [
       'SOUL SURFER CAMP – Independent Boutique Retreat in Weligama',
