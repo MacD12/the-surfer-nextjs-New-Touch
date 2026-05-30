@@ -87,7 +87,7 @@ const PACKAGE_DATA: CampPkg[] = [
     images: [
       'booking_engine/ts2-1.jpg',
       'booking_engine/ts2-2.jpg',
-      'ts2_camp/room_1.jpg',
+      'ts2_camp/singleroom.jpg',
       'ts2_camp/room_2.jpg',
       'ts2_camp/bathroom.jpg',
     ],
