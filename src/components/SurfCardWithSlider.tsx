@@ -11,9 +11,12 @@ type SurfCardProps = {
   body2?: string;
   link: string;
   index: number;
+  /** When true, card uses a 4:5 portrait ratio (matches /camp booking flow).
+   *  When false/undefined, card uses the original fixed 360px height. */
+  tall?: boolean;
 };
 
-const SurfCardWithSlider = ({ images, topic, body1, body2, link, index }: SurfCardProps) => {
+const SurfCardWithSlider = ({ images, topic, body1, body2, link, index, tall }: SurfCardProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const goToImage = (i) => setCurrentImageIndex(i);
@@ -30,7 +33,7 @@ const SurfCardWithSlider = ({ images, topic, body1, body2, link, index }: SurfCa
 
   return (
     <div
-      className="group relative h-[360px] flex items-end justify-center shadow-lg hover:shadow-2xl cursor-pointer overflow-hidden bg-gradient-to-br from-[#0a67b3] via-[#0891b2] to-[#0e7490] transition-shadow duration-500"
+      className={`group relative ${tall ? 'aspect-[4/5] w-full' : 'h-[360px]'} flex items-end justify-center shadow-lg hover:shadow-2xl cursor-pointer overflow-hidden bg-gradient-to-br from-[#0a67b3] via-[#0891b2] to-[#0e7490] transition-shadow duration-500`}
       onClick={handleCardClick}
     >
       {/* Image layers — next/image for LCP + auto-WebP/AVIF + responsive srcset */}
@@ -58,10 +61,12 @@ const SurfCardWithSlider = ({ images, topic, body1, body2, link, index }: SurfCa
           ))}
       </div>
 
-      {/* Permanent gradient overlay — guarantees text contrast even if images fail to load */}
+      {/* Dark gradient overlay — confined to the bottom band where the title,
+          body, and BOOK NOW button sit. Top of the card stays clear so the
+          photo's original colours show through unfiltered. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10 pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none"
       />
 
       {/* Prev / Next slider buttons */}

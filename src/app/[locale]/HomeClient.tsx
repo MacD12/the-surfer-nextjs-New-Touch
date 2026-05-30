@@ -189,6 +189,7 @@ export default function HomeClient() {
                   body1={card1.body1}
                   link={`/${locale}${card1.link}`}
                   index={0}
+                  tall
                 />
               </motion.div>
             )}
@@ -207,6 +208,7 @@ export default function HomeClient() {
                   body1={card2.body1}
                   link={`/${locale}${card2.link}`}
                   index={1}
+                  tall
                 />
               </motion.div>
             )}
@@ -225,6 +227,7 @@ export default function HomeClient() {
                   body1={cardSoulSurfer.body1}
                   link={`/${locale}${cardSoulSurfer.link}`}
                   index={2}
+                  tall
                 />
               </motion.div>
             )}
