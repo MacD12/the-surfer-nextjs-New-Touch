@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   Waves,
@@ -95,10 +96,18 @@ export default function CareersClient() {
       {/* ---------- HERO ---------- */}
       <section
         id="careers-hero"
-        className="relative min-h-screen bg-cover bg-center flex items-center w-full overflow-hidden mb-4"
-        style={{ backgroundImage: "url('/surfcard1.jpg')" }}
+        className="relative min-h-screen flex items-center w-full overflow-hidden mb-4"
         aria-label={t('careers.aria.section')}
       >
+        <Image
+          src="/b5.jpg"
+          alt=""
+          fill
+          priority
+          quality={85}
+          sizes="100vw"
+          className="object-cover object-center -z-10"
+        />
         <Navbar />
         <div
           aria-hidden="true"

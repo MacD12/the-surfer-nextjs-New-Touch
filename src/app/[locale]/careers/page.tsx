@@ -20,7 +20,7 @@ export async function generateMetadata({
       locale === 'de'
         ? 'Arbeite, surfe und lebe die Sri-Lanka-Saison bei The Surfer Weligama. Wir suchen Surflehrer:innen, Social Hosts, Yogalehrer:innen und Social Media Content Creator für Oktober 2026 bis Mai 2027.'
         : "Work, surf & live the Sri Lankan season with The Surfer in Weligama. We're hiring surf instructors, social hosts, yoga teachers, and social media content creators for October 2026 – May 2027.",
-    image: '/surfcard1.jpg',
+    image: '/b5.jpg',
     locale,
   });
 }
