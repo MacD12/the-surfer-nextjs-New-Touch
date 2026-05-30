@@ -318,13 +318,13 @@
         "link": "/beach-camp"
       },
       {
-        "images": ["/ts2_camp/restaurant.jpg", "/ts2_camp/carrom.jpg", "/ts2_camp/surfdays_4.jpg", "/ts2_camp/doubleroom.jpg", "/ts2_camp/room_1.jpg"],
+        "images": ["/booking_engine/ts2-1.jpg", "/booking_engine/ts2-2.jpg", "/ts2_camp/room_1.jpg", "/ts2_camp/room_2.jpg", "/ts2_camp/bathroom.jpg"],
         "topic": "TS2 Surf Camp",
         "body1": "Spüre die Magie des Surfens, wenn die Sonne am Horizont untergeht. Unsere geführten Sunset-Sessions sind der perfekte Abschluss deines Strandtages.",
         "link": "/ts2-camp"
       },
       {
-        "images": ["/soul_camp/3.jpg", "/booking_engine/soulcamp3.jpg", "/soul_camp/13.jpg", "/soul_camp/room-4.jpg"],
+        "images": ["/soul_camp/3.jpg", "/booking_engine/soulcamp4.jpg", "/soul_camp/7.jpg", "/soul_camp/13.jpg", "/soul_camp/6.jpg", "/soul_camp/11.jpg"],
         "topic": "Soul Surfer Camp",
         "body1": "Ein unabhängiges Retreat für engagierte Surfer. Eigener Standort in Weligama mit Infinity-Pool auf dem Dach, Dachrestaurant mit Meerblick und eigenem Sessions-Plan.",
         "link": "/soul-surfer"
